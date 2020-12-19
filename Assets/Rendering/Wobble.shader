@@ -44,12 +44,7 @@ Shader "FullScreen/Wobble"
 			color = float4(CustomPassLoadCameraColor(varyings.positionCS.xy, 0), 1);
 
 		// Add your custom pass code here
-		//color = float4(varyings.positionCS.x / 255, varyings.positionCS.y / 255, 0, 1);
-		// color = float4(posInput.positionNDC.x, posInput.positionNDC.y , 0, 1);
-
-		float n = Warp(posInput.positionNDC.xy);
-
-		color = float4(n, n, n, 1);
+		color = float4(posInput.positionNDC.x, posInput.positionNDC.y , 0, 1);
 
 		// Fade value allow you to increase the strength of the effect while the camera gets closer to the custom pass volume
 		//float f = 1 - abs(_FadeValue * 2 - 1);
