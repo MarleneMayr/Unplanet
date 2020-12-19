@@ -469,7 +469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 78737994}
   - component: {fileID: 78737995}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -565,6 +565,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 279271506}
     m_Modifications:
+    - target: {fileID: 1968944439225960423, guid: 21070906cbcbb6541b8cf1d24a5c4fbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2210832531695253830, guid: 21070906cbcbb6541b8cf1d24a5c4fbc, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -614,8 +618,16 @@ PrefabInstance:
       value: TR_SectionA_01
       objectReference: {fileID: 0}
     - target: {fileID: 2951315303310838613, guid: 21070906cbcbb6541b8cf1d24a5c4fbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2951315303310838613, guid: 21070906cbcbb6541b8cf1d24a5c4fbc, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385914709852707821, guid: 21070906cbcbb6541b8cf1d24a5c4fbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21070906cbcbb6541b8cf1d24a5c4fbc, type: 3}
@@ -743,7 +755,7 @@ GameObject:
   m_Component:
   - component: {fileID: 108960826}
   - component: {fileID: 108960827}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1385,7 +1397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 130639252}
   - component: {fileID: 130639253}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1528,7 +1540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 173520782}
   - component: {fileID: 173520783}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1626,7 +1638,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 189424937}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1659,7 +1671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 192105856}
   - component: {fileID: 192105857}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1807,7 +1819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 202618663}
   - component: {fileID: 202618664}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1863,7 +1875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 217717996}
   - component: {fileID: 217717997}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1919,7 +1931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 221669472}
   - component: {fileID: 221669473}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2093,7 +2105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 249584750}
   - component: {fileID: 249584749}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2191,12 +2203,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2650383239350323068, guid: 891647357ef0cc044acf9aa1be7b2d40, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650383239350323068, guid: 891647357ef0cc044acf9aa1be7b2d40, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3722073005601458399, guid: 891647357ef0cc044acf9aa1be7b2d40, type: 3}
       propertyPath: m_Name
       value: SR_SectionFloor_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722073005601458399, guid: 891647357ef0cc044acf9aa1be7b2d40, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535134321928802053, guid: 891647357ef0cc044acf9aa1be7b2d40, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 891647357ef0cc044acf9aa1be7b2d40, type: 3}
@@ -2339,7 +2363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 278998127}
   - component: {fileID: 278998128}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2394,7 +2418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 279271506}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Room 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2432,7 +2456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 279549149}
   - component: {fileID: 279549150}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2586,7 +2610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 288276988}
   - component: {fileID: 288276989}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4248,7 +4272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 389704578}
   - component: {fileID: 389704579}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4304,7 +4328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 393079715}
   - component: {fileID: 393079716}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4389,7 +4413,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398789243}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4874,7 +4898,7 @@ GameObject:
   m_Component:
   - component: {fileID: 443515027}
   - component: {fileID: 443515028}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4952,7 +4976,7 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 50
@@ -4962,9 +4986,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
-  field of view: 60
+  field of view: 50.534023
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -5112,7 +5136,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458832003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0384147, y: -1.0462523, z: -2.5288243}
+  m_LocalPosition: {x: -2.0384147, y: -1.0462523, z: 43.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6026,7 +6050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 472085200}
   - component: {fileID: 472085201}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6156,7 +6180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 487724339}
   - component: {fileID: 487724340}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6304,7 +6328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 509313092}
   - component: {fileID: 509313093}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6360,7 +6384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 513659344}
   - component: {fileID: 513659345}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6606,7 +6630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 540174648}
   - component: {fileID: 540174649}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6662,7 +6686,7 @@ GameObject:
   m_Component:
   - component: {fileID: 553408023}
   - component: {fileID: 553408024}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6719,9 +6743,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: TR_SectionB_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5104088333951198972, guid: dd7bc729052fb0349850831c3c596d60, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5231792397020062134, guid: dd7bc729052fb0349850831c3c596d60, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5231792397020062134, guid: dd7bc729052fb0349850831c3c596d60, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763497481495130190, guid: dd7bc729052fb0349850831c3c596d60, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6763497481495130190, guid: dd7bc729052fb0349850831c3c596d60, type: 3}
       propertyPath: m_IsActive
@@ -6854,7 +6890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 569215024}
   - component: {fileID: 569215025}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6910,7 +6946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 571131996}
   - component: {fileID: 571131997}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7371,6 +7407,14 @@ PrefabInstance:
       propertyPath: m_RenderingLayerMask
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2039331287020930634, guid: 34ae16c55c6bb5c499850a48a9da2858, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119695552278669691, guid: 34ae16c55c6bb5c499850a48a9da2858, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2119695552278669691, guid: 34ae16c55c6bb5c499850a48a9da2858, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -7424,6 +7468,10 @@ PrefabInstance:
       value: FS_Aisle_01
       objectReference: {fileID: 0}
     - target: {fileID: 8119245112309665723, guid: 34ae16c55c6bb5c499850a48a9da2858, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119245112309665723, guid: 34ae16c55c6bb5c499850a48a9da2858, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -7444,7 +7492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 639694737}
   - component: {fileID: 639694738}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7500,7 +7548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 657911452}
   - component: {fileID: 657911453}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7556,7 +7604,7 @@ GameObject:
   m_Component:
   - component: {fileID: 659887663}
   - component: {fileID: 659887664}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7612,7 +7660,7 @@ GameObject:
   m_Component:
   - component: {fileID: 668396959}
   - component: {fileID: 668396960}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8274,7 +8322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 712348114}
   - component: {fileID: 712348115}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8744,6 +8792,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1159510705}
     m_Modifications:
+    - target: {fileID: 2032402220143765135, guid: 52d08675f56360346935de397874b4e2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2711701545633919536, guid: 52d08675f56360346935de397874b4e2, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6037338303886651795, guid: 52d08675f56360346935de397874b4e2, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -8791,6 +8847,10 @@ PrefabInstance:
     - target: {fileID: 7319394942786405248, guid: 52d08675f56360346935de397874b4e2, type: 3}
       propertyPath: m_Name
       value: SR_Wall_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319394942786405248, guid: 52d08675f56360346935de397874b4e2, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52d08675f56360346935de397874b4e2, type: 3}
@@ -9138,7 +9198,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766848764}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -9334,6 +9394,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5610371627409812159, guid: c176f53f0f3a90a448b849e5d0e0af46, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6506099750115093319, guid: c176f53f0f3a90a448b849e5d0e0af46, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6644396898759338875, guid: c176f53f0f3a90a448b849e5d0e0af46, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -9345,6 +9413,10 @@ PrefabInstance:
     - target: {fileID: 8493635754120082323, guid: c176f53f0f3a90a448b849e5d0e0af46, type: 3}
       propertyPath: m_Name
       value: ST_Aisle_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493635754120082323, guid: c176f53f0f3a90a448b849e5d0e0af46, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c176f53f0f3a90a448b849e5d0e0af46, type: 3}
@@ -9695,7 +9767,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819419775}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -9973,7 +10045,7 @@ GameObject:
   m_Component:
   - component: {fileID: 856740580}
   - component: {fileID: 856740581}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10193,7 +10265,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896213160}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -10552,7 +10624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 901643708}
   - component: {fileID: 901643709}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10607,7 +10679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 906649024}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Structure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10642,7 +10714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 909281173}
   - component: {fileID: 909281174}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10698,7 +10770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 918517615}
   - component: {fileID: 918517616}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10868,6 +10940,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 279271506}
     m_Modifications:
+    - target: {fileID: 2371176872863964239, guid: cd71e9a7b3e576847bee371f47119db8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4815497566155810433, guid: cd71e9a7b3e576847bee371f47119db8, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10912,9 +10988,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7626921550938421659, guid: cd71e9a7b3e576847bee371f47119db8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8399015793340142738, guid: cd71e9a7b3e576847bee371f47119db8, type: 3}
       propertyPath: m_Name
       value: TR_CurveWall_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8399015793340142738, guid: cd71e9a7b3e576847bee371f47119db8, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd71e9a7b3e576847bee371f47119db8, type: 3}
@@ -10933,6 +11017,18 @@ PrefabInstance:
     - target: {fileID: 5664574351387169974, guid: 8194a612473962d47a362dd51f8ab4cd, type: 3}
       propertyPath: m_Name
       value: SR_Pillar_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664574351387169974, guid: 8194a612473962d47a362dd51f8ab4cd, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6872169437490098588, guid: 8194a612473962d47a362dd51f8ab4cd, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004790489884062023, guid: 8194a612473962d47a362dd51f8ab4cd, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8703141978557015717, guid: 8194a612473962d47a362dd51f8ab4cd, type: 3}
       propertyPath: m_RootOrder
@@ -11024,7 +11120,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961646057}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -11113,7 +11209,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 966118099}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Puddles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11956,6 +12052,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SR_Pillar_03
       objectReference: {fileID: 0}
+    - target: {fileID: 5664574351387169974, guid: 8194a612473962d47a362dd51f8ab4cd, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6872169437490098588, guid: 8194a612473962d47a362dd51f8ab4cd, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004790489884062023, guid: 8194a612473962d47a362dd51f8ab4cd, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8703141978557015717, guid: 8194a612473962d47a362dd51f8ab4cd, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -12640,8 +12748,20 @@ PrefabInstance:
       value: SR_CurveWall_01
       objectReference: {fileID: 0}
     - target: {fileID: 2918803469749964063, guid: a976770ba53861045836caedbe64ac34, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918803469749964063, guid: a976770ba53861045836caedbe64ac34, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718073541385363607, guid: a976770ba53861045836caedbe64ac34, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748967203994896466, guid: a976770ba53861045836caedbe64ac34, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a976770ba53861045836caedbe64ac34, type: 3}
@@ -13121,6 +13241,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SR_Pillar_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5664574351387169974, guid: 8194a612473962d47a362dd51f8ab4cd, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6872169437490098588, guid: 8194a612473962d47a362dd51f8ab4cd, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004790489884062023, guid: 8194a612473962d47a362dd51f8ab4cd, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8703141978557015717, guid: 8194a612473962d47a362dd51f8ab4cd, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -13181,7 +13313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1118045913}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13422,7 +13554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1137416133}
   - component: {fileID: 1137416134}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13521,7 +13653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1153039155}
   - component: {fileID: 1153039156}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13653,7 +13785,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155291764}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -6, y: 4.2, z: 0}
+  m_LocalPosition: {x: -6, y: 4.2, z: 0.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1418343656}
@@ -13669,7 +13801,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1159360140}
   - component: {fileID: 1159360141}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13724,7 +13856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1159510705}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Room 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13769,7 +13901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1173332964}
   - component: {fileID: 1173332965}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13875,7 +14007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1189696390}
   - component: {fileID: 1189696391}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14221,7 +14353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1217935328}
   - component: {fileID: 1217935329}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14565,7 +14697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1269454253}
   - component: {fileID: 1269454254}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14713,7 +14845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1296980972}
   - component: {fileID: 1296980973}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14802,7 +14934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1328092798}
   - component: {fileID: 1328092799}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14960,7 +15092,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1335580409}
   - component: {fileID: 1335580410}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15016,7 +15148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1336631801}
   - component: {fileID: 1336631802}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15072,7 +15204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1338245901}
   - component: {fileID: 1338245902}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15222,6 +15354,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2782458481585470134, guid: 8e1c9195acf59394aaf785cdb5fe8c84, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2782458481585470134, guid: 8e1c9195acf59394aaf785cdb5fe8c84, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -15230,12 +15366,20 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3643281215179823450, guid: 8e1c9195acf59394aaf785cdb5fe8c84, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643281215179823450, guid: 8e1c9195acf59394aaf785cdb5fe8c84, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6245405139126777595, guid: 8e1c9195acf59394aaf785cdb5fe8c84, type: 3}
       propertyPath: m_Name
       value: SR_SectionWall_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245405139126777595, guid: 8e1c9195acf59394aaf785cdb5fe8c84, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6245405139126777595, guid: 8e1c9195acf59394aaf785cdb5fe8c84, type: 3}
       propertyPath: m_IsActive
@@ -15393,7 +15537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1366381907}
   - component: {fileID: 1366381908}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15449,7 +15593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370110032}
   - component: {fileID: 1370110033}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15803,9 +15947,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 279271506}
     m_Modifications:
+    - target: {fileID: 1632851017357678119, guid: 92e859c764174cf4385acf2f713357cc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781738700157651319, guid: 92e859c764174cf4385acf2f713357cc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5358883105248097538, guid: 92e859c764174cf4385acf2f713357cc, type: 3}
       propertyPath: m_Name
       value: TR_Pillar_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5358883105248097538, guid: 92e859c764174cf4385acf2f713357cc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5358883105248097538, guid: 92e859c764174cf4385acf2f713357cc, type: 3}
       propertyPath: m_IsActive
@@ -16092,7 +16248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1435576279}
   - component: {fileID: 1435576280}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16145,13 +16301,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 738646681595172698, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
-      propertyPath: allowDynamicResolution
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 738646681595172699, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_AllowDynamicResolution
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 738646681744756154, guid: 573ac53c334415945bf239de2c2f0511, type: 3}
       propertyPath: m_Name
@@ -16408,7 +16560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1470791024}
   - component: {fileID: 1470791025}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16464,7 +16616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1472715358}
   - component: {fileID: 1472715359}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16862,7 +17014,7 @@ MonoBehaviour:
     distanceFadeStart: 50
     distanceFadeEnd: 60
     textureIndex: 0
-    textureOffset: {x: -0, y: -0, z: 0}
+    textureOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &1504255721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17457,7 +17609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1540753881}
   - component: {fileID: 1540753882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17599,7 +17751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1565217625}
   - component: {fileID: 1565217626}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18479,7 +18631,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605415969}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -19734,7 +19886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1644367842}
   - component: {fileID: 1644367843}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19790,7 +19942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1656474238}
   - component: {fileID: 1656474239}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19846,7 +19998,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1658575783}
   - component: {fileID: 1658575784}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19902,7 +20054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1661917179}
   - component: {fileID: 1661917180}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20529,7 +20681,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1693144976}
   - component: {fileID: 1693144977}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21113,7 +21265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1721297153}
   - component: {fileID: 1721297154}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21169,7 +21321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1740774660}
   - component: {fileID: 1740774661}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21477,7 +21629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1766227624}
   - component: {fileID: 1766227625}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21538,7 +21690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1766869843
 Transform:
   m_ObjectHideFlags: 0
@@ -21570,7 +21722,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1770541220}
   - component: {fileID: 1770541221}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22076,7 +22228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1795352280}
   - component: {fileID: 1795352281}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22282,7 +22434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1811205247}
   - component: {fileID: 1811205248}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22338,7 +22490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1812347016}
   - component: {fileID: 1812347017}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22384,6 +22536,111 @@ MonoBehaviour:
   m_Offset: {x: 0, y: 0, z: 0.1}
   m_Size: {x: 6, y: 6, z: 0.2}
   m_FadeFactor: 0.269
+--- !u!1 &1815782264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1815782266}
+  - component: {fileID: 1815782265}
+  m_Layer: 0
+  m_Name: Rendering
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1815782265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815782264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26d6499a6bd256e47b859377446493a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  fadeRadius: 0
+  priority: 0
+  customPasses:
+  - id: 0
+  - id: 1
+  - id: 2
+  injectionPoint: 2
+  references:
+    version: 1
+    00000000:
+      type: {class: DrawRenderersCustomPass, ns: UnityEngine.Rendering.HighDefinition, asm: Unity.RenderPipelines.HighDefinition.Runtime}
+      data:
+        m_Name: Wobble
+        enabled: 0
+        targetColorBuffer: 0
+        targetDepthBuffer: 0
+        clearFlags: 0
+        passFoldout: 0
+        m_Version: 0
+        filterFoldout: 1
+        rendererFoldout: 1
+        renderQueueType: 10
+        layerMask:
+          serializedVersion: 2
+          m_Bits: 4294967295
+        sortingCriteria: 59
+        overrideMaterial: {fileID: 2100000, guid: a2138346b48c47e40ad86942e43b8720, type: 2}
+        overrideMaterialPassIndex: 0
+        overrideMaterialPassName: ForwardOnly
+        overrideDepthState: 0
+        depthCompareFunction: 4
+        depthWrite: 1
+        shaderPass: 0
+    00000001:
+      type: {class: FullScreenCustomPass, ns: UnityEngine.Rendering.HighDefinition, asm: Unity.RenderPipelines.HighDefinition.Runtime}
+      data:
+        m_Name: Depth
+        enabled: 1
+        targetColorBuffer: 0
+        targetDepthBuffer: 0
+        clearFlags: 0
+        passFoldout: 0
+        m_Version: 0
+        fullscreenPassMaterial: {fileID: 2100000, guid: 01db22d8166d5fe44b7abcb3d163ac0a, type: 2}
+        materialPassIndex: 0
+        materialPassName: Custom Pass 0
+        fetchColorBuffer: 0
+    00000002:
+      type: {class: FullScreenCustomPass, ns: UnityEngine.Rendering.HighDefinition, asm: Unity.RenderPipelines.HighDefinition.Runtime}
+      data:
+        m_Name: Wobble
+        enabled: 1
+        targetColorBuffer: 0
+        targetDepthBuffer: 0
+        clearFlags: 0
+        passFoldout: 0
+        m_Version: 0
+        fullscreenPassMaterial: {fileID: 2100000, guid: a2138346b48c47e40ad86942e43b8720, type: 2}
+        materialPassIndex: 0
+        materialPassName: Custom Pass 0
+        fetchColorBuffer: 0
+--- !u!4 &1815782266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815782264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1821451199
 GameObject:
   m_ObjectHideFlags: 0
@@ -22425,7 +22682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1824927984}
   - component: {fileID: 1824927985}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23521,7 +23778,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879258400}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -23604,7 +23861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1892985094}
   - component: {fileID: 1892985095}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23657,6 +23914,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2076744744}
     m_Modifications:
+    - target: {fileID: 3740463863701873446, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052494109967427614, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4052494109967427614, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -23664,6 +23929,10 @@ PrefabInstance:
     - target: {fileID: 4052494109967427614, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5038745504029425634, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5038745504029425634, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
       propertyPath: m_IsActive
@@ -23674,8 +23943,16 @@ PrefabInstance:
       value: FR_SectionA_01
       objectReference: {fileID: 0}
     - target: {fileID: 5540328433800853362, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5540328433800853362, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463148923651559899, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6463148923651559899, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
       propertyPath: m_IsActive
@@ -23686,8 +23963,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6562230865071876762, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6562230865071876762, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7112510088124219138, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8842934981969102177, guid: 7e9b6f9789d8de649bcf0487d29fd33f, type: 3}
       propertyPath: m_RootOrder
@@ -23755,6 +24040,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 279271506}
     m_Modifications:
+    - target: {fileID: 1968944439225960423, guid: 21070906cbcbb6541b8cf1d24a5c4fbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2210832531695253830, guid: 21070906cbcbb6541b8cf1d24a5c4fbc, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -23803,6 +24092,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TR_SectionA_02
       objectReference: {fileID: 0}
+    - target: {fileID: 2951315303310838613, guid: 21070906cbcbb6541b8cf1d24a5c4fbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385914709852707821, guid: 21070906cbcbb6541b8cf1d24a5c4fbc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21070906cbcbb6541b8cf1d24a5c4fbc, type: 3}
 --- !u!4 &1898095925 stripped
@@ -23820,7 +24117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1901720432}
   - component: {fileID: 1901720433}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25280,7 +25577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1945799938}
   - component: {fileID: 1945799939}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26400,6 +26697,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FR_Platform_01
       objectReference: {fileID: 0}
+    - target: {fileID: 635960054947465925, guid: b31afbf48d7a11249b84d842fad98e9c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298799193239403644, guid: b31afbf48d7a11249b84d842fad98e9c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3745676244986809596, guid: b31afbf48d7a11249b84d842fad98e9c, type: 3}
       propertyPath: m_RenderingLayerMask
       value: 23
@@ -26408,6 +26713,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: f042a9897837021468ecfcb204be998e, type: 2}
+    - target: {fileID: 3801725689566607459, guid: b31afbf48d7a11249b84d842fad98e9c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3801725689566607459, guid: b31afbf48d7a11249b84d842fad98e9c, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -26473,7 +26782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1989224288}
   - component: {fileID: 1989224289}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26529,7 +26838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2012224130}
   - component: {fileID: 2012224131}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26761,7 +27070,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2030731969}
   - component: {fileID: 2030731970}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26817,7 +27126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2033612208}
   - component: {fileID: 2033612209}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27090,6 +27399,10 @@ PrefabInstance:
       propertyPath: m_StitchLightmapSeams
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4594111693260382465, guid: 573008edd81fd004a85a9b75a149b49f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6489513866886783320, guid: 573008edd81fd004a85a9b75a149b49f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -27139,8 +27452,16 @@ PrefabInstance:
       value: SR_SectionCeiling_01
       objectReference: {fileID: 0}
     - target: {fileID: 7805929622441612107, guid: 573008edd81fd004a85a9b75a149b49f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805929622441612107, guid: 573008edd81fd004a85a9b75a149b49f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8463274595219637566, guid: 573008edd81fd004a85a9b75a149b49f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8463274595219637566, guid: 573008edd81fd004a85a9b75a149b49f, type: 3}
       propertyPath: m_IsActive
@@ -27158,7 +27479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2056534168}
   - component: {fileID: 2056534169}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27213,7 +27534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2076744744}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Room 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27799,7 +28120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2124969128}
   - component: {fileID: 2124969129}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27855,7 +28176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2129332202}
   - component: {fileID: 2129332203}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27911,7 +28232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2131837523}
   - component: {fileID: 2131837524}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27967,7 +28288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2133258578}
   - component: {fileID: 2133258579}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28023,7 +28344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2137405422}
   - component: {fileID: 2137405423}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Puddle (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28157,7 +28478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2142628531}
   - component: {fileID: 2142628532}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Decal Projector (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28674,6 +28995,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 279271506}
     m_Modifications:
+    - target: {fileID: 3443040268079923901, guid: 5f7cc295896e7b24cb6789747b49090a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3742074988062821673, guid: 5f7cc295896e7b24cb6789747b49090a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4656321152676187855, guid: 5f7cc295896e7b24cb6789747b49090a, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -28721,6 +29050,10 @@ PrefabInstance:
     - target: {fileID: 8558469540909956316, guid: 5f7cc295896e7b24cb6789747b49090a, type: 3}
       propertyPath: m_Name
       value: TR_Counter_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558469540909956316, guid: 5f7cc295896e7b24cb6789747b49090a, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f7cc295896e7b24cb6789747b49090a, type: 3}
