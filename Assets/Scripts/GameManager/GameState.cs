@@ -13,10 +13,10 @@ public class GameState : State
 
     public override void AfterActivate()
     {
-        UIcam.gameObject.SetActive(false);
-        player.gameObject.SetActive(true);
-
         Spawn(spawnPoint);
+        player.gameObject.SetActive(true);
+        UIcam.gameObject.SetActive(false);
+
         goal.OnReached.AddListener(EndGame);
     }
 

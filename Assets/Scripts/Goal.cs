@@ -7,10 +7,7 @@ public class Goal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("hit");
-
-        print(other.GetComponent<CharacterController>());
-        print(other.gameObject.GetComponent<CharacterController>());
+        print("Player reached Goal");
         if (other.GetComponent<CharacterController>())
             OnReached?.Invoke();
     }

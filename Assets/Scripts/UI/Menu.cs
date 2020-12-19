@@ -32,7 +32,7 @@ namespace UI
             canvas.blocksRaycasts = false;
         }
 
-        public void StartGame() => OnStartClicked.Invoke();
+        public static void StartGame() => OnStartClicked.Invoke();
         public static UnityEvent OnStartClicked = new UnityEvent();
     }
 }
