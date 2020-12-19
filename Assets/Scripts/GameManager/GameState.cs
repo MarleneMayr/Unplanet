@@ -14,9 +14,8 @@ public class GameState : State
     public override void AfterActivate()
     {
         Spawn(spawnPoint);
-        UIcam.GetComponent<AudioListener>().enabled = false;
         player.gameObject.SetActive(true);
-        //UIcam.gameObject.SetActive(false);
+        UIcam.gameObject.SetActive(false);
 
         goal.OnReached.AddListener(EndGame);
     }
@@ -24,8 +23,7 @@ public class GameState : State
     public override void BeforeDeactivate()
     {
         player.gameObject.SetActive(false);
-        //UIcam.gameObject.SetActive(true);
-        UIcam.GetComponent<AudioListener>().enabled = true;
+        UIcam.gameObject.SetActive(true);
 
         menu.Hide();
         pauseMenu.Hide();
