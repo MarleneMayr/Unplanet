@@ -257,8 +257,8 @@ RectTransform:
   m_Children:
   - {fileID: 62152723423294246}
   - {fileID: 62152723466410990}
-  - {fileID: 62152725016232664}
   - {fileID: 62152724686794031}
+  - {fileID: 62152725016232664}
   - {fileID: 62152724275568713}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -285,7 +285,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -665,7 +665,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62152723466410991}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -731,8 +731,8 @@ CanvasGroup:
   m_GameObject: {fileID: 62152724275568726}
   m_Enabled: 1
   m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &62152724275568712
 MonoBehaviour:
@@ -1046,7 +1046,7 @@ RectTransform:
   m_Children:
   - {fileID: 62152723069677260}
   m_Father: {fileID: 62152723120369480}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1062,8 +1062,8 @@ CanvasGroup:
   m_GameObject: {fileID: 62152724686794028}
   m_Enabled: 1
   m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &62152724686794030
 MonoBehaviour:
@@ -1244,7 +1244,7 @@ RectTransform:
   - {fileID: 62152723101825735}
   - {fileID: 62152724421855986}
   m_Father: {fileID: 62152723120369480}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1260,8 +1260,8 @@ CanvasGroup:
   m_GameObject: {fileID: 62152725016232665}
   m_Enabled: 1
   m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &62152725016232667
 MonoBehaviour:
