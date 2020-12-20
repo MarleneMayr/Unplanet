@@ -50,7 +50,9 @@ MonoBehaviour:
   UIcam: {fileID: 0}
   spawnPoint: {fileID: 0}
   goalLocations: []
+  visualHints: {fileID: 0}
   lightSeconds: 4
+  maxDistance: 400
 --- !u!1 &5878531582684726780
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,6 +144,7 @@ MonoBehaviour:
   cameraStart: {fileID: 0}
   cameraEnd: {fileID: 0}
   cam: {fileID: 0}
+  flightDuration: 0
 --- !u!1 &5878531583784290149
 GameObject:
   m_ObjectHideFlags: 0
