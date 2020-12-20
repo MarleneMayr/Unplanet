@@ -12,6 +12,7 @@ public class GameState : State
     [SerializeField] private Camera UIcam;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private Transform[] goalLocations;
+    [SerializeField] private ScreenEffect[] effects;
     [SerializeField] private VisualHints visualHints;
     [SerializeField] private float lightSeconds;
     [SerializeField] private float maxDistance;
@@ -26,7 +27,7 @@ public class GameState : State
     public override void AfterActivate()
     {
         Spawn(spawnPoint);
-        SpawnGoal(0);
+        currentGoalPos = goal.Spawn(goalLocations[0]);
         player.gameObject.SetActive(true);
         UIcam.gameObject.SetActive(false);
         menu.SetText(index.ToString());
@@ -59,30 +60,14 @@ public class GameState : State
         player.transform.SetPositionAndRotation(spawnPoint.position, spawnPoint.rotation);
     }
 
-    private void SpawnGoal(int index)
-    {
-        goal.StopEffects();
-        goal.transform.SetPositionAndRotation(goalLocations[index].position, goalLocations[index].rotation);
-        currentGoalPos = goalLocations[index].position;
-    }
-
-    private void Pause()
-    {
-        menu.Hide(0);
-        pauseMenu.Show(0);
-
-        Time.timeScale = 0f;
-    }
-
-    private void Unpause()
-    {
-        Time.timeScale = 1f;
-        pauseMenu.Hide(0);
-        menu.Show();
-    }
 
     private void ReachedGoal()
     {
+        foreach (var e in effects)
+        {
+            e?.Deactivate();
+        }
+
         index++;
         FoundGoal?.Invoke(index);
         if (index == goalLocations.Length)
@@ -102,8 +87,8 @@ public class GameState : State
     {
         yield return new WaitForSeconds(seconds);
 
-        SpawnGoal(index);
-
+        currentGoalPos = goal.Spawn(goalLocations[index]);
+        effects[index]?.Activate();
         // restart env effects
     }
 }
