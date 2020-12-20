@@ -63,7 +63,7 @@ _VisRange("Visibility Range", float) = 1
 		//return float4((color.rgb + f), color.a);
 
 		float3 col = (color.rgb * (depthfactor)) + (float3(0, 0.05, 0.4) * (1 - depthfactor));
-		return float4(col, 1); // *depthfactor * 2;
+		return float4(col, 1) *depthfactor * 2;
 	}
 
 		ENDHLSL
