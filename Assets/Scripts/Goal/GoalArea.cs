@@ -22,8 +22,6 @@ public class GoalArea : MonoBehaviour
     {
         if (other.GetComponent<CharacterController>())
         {
-            PlayerInArea?.Invoke();
-
             // turn off basic effects here
         }
     }

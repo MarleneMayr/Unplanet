@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using UI;
 using UnityEngine;
@@ -18,11 +19,17 @@ public class GameState : State
     [SerializeField] private float maxDistance;
     public AnimationCurve progressCurve;
 
-    public static int index { get; private set; }
-    public static float progress { get; private set; }
     private Vector3 currentGoalPos;
+    /// <summary>index of the current goal position</summary>
+    public static int index { get; private set; }
+    /// <summary>linear distance in the range [0..1]</summary>
+    public static float distance { get; private set; }
+
+    /// <summary>curve-influenced distance in the range [0..1]</summary>
+    public static float progress { get; private set; }
 
     public static IntEvent FoundGoal = new IntEvent();
+    private bool kinematic;
 
     public override void AfterActivate()
     {
@@ -50,16 +57,20 @@ public class GameState : State
 
     private void Update()
     {
-        float distance = Vector3.Distance(currentGoalPos, player.transform.position);
-        distance = Mathf.InverseLerp(0, maxDistance, distance);
-        progress = progressCurve.Evaluate(distance);
+        distance = CalculateDistance();
+        if (!kinematic) progress = progressCurve.Evaluate(distance);
+    }
+
+    private float CalculateDistance()
+    {
+        float d = Vector3.Distance(currentGoalPos, player.transform.position);
+        return Mathf.InverseLerp(0, maxDistance, d);
     }
 
     private void Spawn(Transform spawnPoint)
     {
         player.transform.SetPositionAndRotation(spawnPoint.position, spawnPoint.rotation);
     }
-
 
     private void ReachedGoal()
     {
@@ -79,16 +90,24 @@ public class GameState : State
         else
         {
             menu.SetText(index.ToString());
-            StartCoroutine(Light(lightSeconds));
+            StartCoroutine(Euphoria(lightSeconds, 2));
         }
     }
 
-    private IEnumerator Light(float seconds)
+    private IEnumerator Euphoria(float seconds, float fadeIn)
     {
         yield return new WaitForSeconds(seconds);
 
+        // spawn new
         currentGoalPos = goal.Spawn(goalLocations[index]);
         effects[index]?.Activate();
+
         // restart env effects
+        kinematic = true;
+        float targetProgress = progressCurve.Evaluate(CalculateDistance());
+        DOTween.To(() => progress, x => progress = x, targetProgress, fadeIn);
+        yield return new WaitForSeconds(fadeIn);
+
+        kinematic = false;
     }
 }

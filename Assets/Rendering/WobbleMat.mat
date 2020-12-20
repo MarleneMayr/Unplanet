@@ -64,7 +64,7 @@ Material:
     - _DstBlend: 10
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
-    - _Fade: 0.9976174
+    - _Fade: 0.9980938
     - _OpaqueCullMode: 2
     - _RenderQueueType: 4
     - _SrcBlend: 1
