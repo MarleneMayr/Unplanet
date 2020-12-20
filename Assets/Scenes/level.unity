@@ -1526,9 +1526,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rendering
       objectReference: {fileID: 0}
+    - target: {fileID: 85458792806353887, guid: 4c23b4c30b26b0a45ad406abe1038dc7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1466657847223467612, guid: 4c23b4c30b26b0a45ad406abe1038dc7, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063654417753432872, guid: 4c23b4c30b26b0a45ad406abe1038dc7, type: 3}
+      propertyPath: customPasses.Array.data[0].overrideMaterialPassName
+      value: Forward
       objectReference: {fileID: 0}
     - target: {fileID: 8909975596744059640, guid: 4c23b4c30b26b0a45ad406abe1038dc7, type: 3}
       propertyPath: m_IsActive
