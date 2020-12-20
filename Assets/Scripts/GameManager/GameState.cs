@@ -12,6 +12,7 @@ public class GameState : State
     [SerializeField] private Camera UIcam;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private Transform[] goalLocations;
+    [SerializeField] private ScreenEffect[] effects;
     [SerializeField] private VisualHints visualHints;
     [SerializeField] private float lightSeconds;
     [SerializeField] private float maxDistance;
@@ -62,6 +63,11 @@ public class GameState : State
 
     private void ReachedGoal()
     {
+        foreach (var e in effects)
+        {
+            e?.Deactivate();
+        }
+
         index++;
         FoundGoal?.Invoke(index);
         if (index == goalLocations.Length)
@@ -82,7 +88,7 @@ public class GameState : State
         yield return new WaitForSeconds(seconds);
 
         currentGoalPos = goal.Spawn(goalLocations[index]);
-
+        effects[index]?.Activate();
         // restart env effects
     }
 }
