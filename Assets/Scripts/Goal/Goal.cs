@@ -12,14 +12,14 @@ public class Goal : MonoBehaviour
         GoalObject.PlayerInGoal.AddListener(Reached);
     }
 
-    public Vector3 Spawn(Transform t)
+    public Vector3 Spawn(Level.GoalLocation t)
     {
         StopEffects();
-        transform.SetPositionAndRotation(t.position, t.rotation);
+        transform.SetPositionAndRotation(t.pos, t.rot);
         triggerArea.GetComponent<Collider>().enabled = true;
         goalObject.GetComponent<Collider>().enabled = true;
 
-        return t.position;
+        return t.pos;
     }
 
     public void StopEffects()

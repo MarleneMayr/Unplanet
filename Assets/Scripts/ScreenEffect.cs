@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ScreenEffect : MonoBehaviour
@@ -18,6 +16,6 @@ public class ScreenEffect : MonoBehaviour
 
     public void Update()
     {
-        material.SetFloat("_Fade", 1-GameState.progress);
+        material.SetFloat("_Fade", 1 - GameState.progress);
     }
 }

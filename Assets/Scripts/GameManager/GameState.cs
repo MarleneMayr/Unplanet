@@ -11,9 +11,9 @@ public class GameState : State
     [SerializeField] private Goal goal;
     [SerializeField] private CharacterController player;
     [SerializeField] private Camera UIcam;
-    [SerializeField] private Transform spawnPoint;
-    [SerializeField] private Transform[] goalLocations;
-    [SerializeField] private ScreenEffect[] effects;
+    //[SerializeField] private Transform spawnPoint;
+    //[SerializeField] private Transform[] goalLocations;
+    //[SerializeField] private ScreenEffect[] effects;
     [SerializeField] private VisualHints visualHints;
     [SerializeField] private float lightSeconds;
     [SerializeField] private float maxDistance;
@@ -21,7 +21,7 @@ public class GameState : State
 
     private Vector3 currentGoalPos;
     /// <summary>index of the current goal position</summary>
-    public static int index { get; private set; }
+    //public static int index { get; private set; }
     /// <summary>linear distance in the range [0..1]</summary>
     public static float distance { get; private set; }
 
@@ -31,13 +31,16 @@ public class GameState : State
     public static IntEvent FoundGoal = new IntEvent();
     private bool kinematic;
 
+    private Level lvl;
+
     public override void AfterActivate()
     {
-        Spawn(spawnPoint);
-        currentGoalPos = goal.Spawn(goalLocations[0]);
+        lvl = levelManager.GetNext();
+        Spawn(lvl.spawnPoint); // spawn player
+        currentGoalPos = goal.Spawn(lvl.GetNextGoal()); // spawn goal at new position
         player.gameObject.SetActive(true);
         UIcam.gameObject.SetActive(false);
-        menu.SetText(index.ToString());
+        menu.SetText(lvl.index.ToString());
         visualHints.Activate();
 
         goal.OnReached.AddListener(ReachedGoal);
@@ -58,6 +61,7 @@ public class GameState : State
     private void Update()
     {
         distance = CalculateDistance();
+        menu.SetText(distance.ToString());
         if (!kinematic) progress = progressCurve.Evaluate(distance);
     }
 
@@ -74,22 +78,17 @@ public class GameState : State
 
     private void ReachedGoal()
     {
-        foreach (var e in effects)
-        {
-            e?.Deactivate();
-        }
+        FoundGoal?.Invoke(lvl.index);
 
-        index++;
-        FoundGoal?.Invoke(index);
-        if (index == goalLocations.Length)
+        lvl.DeactivateEffects();
+        if (lvl.isLastGoal())
         {
-            index = 0;
             stateMachine.GoTo<EndState>();
             return;
         }
         else
         {
-            menu.SetText(index.ToString());
+            menu.SetText(lvl.index.ToString());
             StartCoroutine(Euphoria(lightSeconds, 2));
         }
     }
@@ -98,9 +97,8 @@ public class GameState : State
     {
         yield return new WaitForSeconds(seconds);
 
-        // spawn new
-        currentGoalPos = goal.Spawn(goalLocations[index]);
-        effects[index]?.Activate();
+        // spawn goal at new position
+        currentGoalPos = goal.Spawn(lvl.GetNextGoal());
 
         // restart env effects
         kinematic = true;

@@ -8,10 +8,12 @@ public abstract class State : MonoBehaviour
 
     protected StateMachine stateMachine;
     protected static AudioManager audioManager;
+    protected static LevelManager levelManager;
 
     public void Activate(StateMachine sm)
     {
         audioManager ??= FindObjectOfType<AudioManager>();
+        levelManager ??= FindObjectOfType<LevelManager>();
         stateMachine = sm;
         menu?.Show(menuFadeDuration);
         gameObject.SetActive(true);
