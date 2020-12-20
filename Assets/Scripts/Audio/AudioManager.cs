@@ -13,12 +13,21 @@ public class AudioManager : MonoBehaviour
 {
     public enum GlobalSound
     {
-        Success,
-        GameOver
+        Steps,
+        End, 
+        Forshadowing,
+        Found4,
+        Found8,
+        Transition1,
+        Transition2,
+        Loop1
     }
 
     [SerializeField] private Sound[] GlobalSounds;
-    [SerializeField] private AudioClip[] ImpactSounds;
+    [SerializeField] private Sound[] Loops;
+
+    private Sound currentLoop;
+    private Sound nextLoop;
 
     private List<Sound> PausedSounds = new List<Sound>();
 
@@ -26,6 +35,9 @@ public class AudioManager : MonoBehaviour
     {
         SetGlobalAudioSources();
     }
+
+
+    // PLAY METHODS //
 
     public void Play(GlobalSound name)
     {
@@ -43,10 +55,41 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void PlayLoopScheduled(int index)
+    {
+        Sound s = Loops[index];
+
+        if (s != null && !s.source.isPlaying)
+        {
+            if (nextLoop != null)
+            {
+                nextLoop.source.Stop(); // if next loop already scheduled, stop it
+            }
+
+            double timeScheduled = AudioSettings.dspTime;
+
+            if (currentLoop != null)
+            {
+                 timeScheduled = currentLoop.timeScheduled + currentLoop.duration; // set scheduled time to end time of current loop
+            }
+
+            currentLoop.source.SetScheduledEndTime(timeScheduled); // end time for current loop
+            s.source.SetScheduledStartTime(timeScheduled);
+            s.timeScheduled = timeScheduled;
+            nextLoop = s;
+        }
+    }
+
     public void Stop(GlobalSound name)
     {
         Sound s = FindSound(name);
         s?.source.Stop();
+    }
+
+    public void StopMusic()
+    {
+        if (currentLoop != null) nextLoop.source.Stop();
+        if (nextLoop != null) nextLoop.source.Stop();
     }
 
     public void PauseIfPlaying(GlobalSound name)
@@ -71,17 +114,41 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayImpactSound(AudioSource source, float velocity)
+
+    // GAME STATES //
+
+    public void PlayFoundShort()
     {
-        float volume = Mathf.Min(velocity / 3.0f, 1f);
-        float pitch = Random.Range(0.95f, 1.05f);
-        AudioClip clip = ImpactSounds[Random.Range(0, ImpactSounds.Length)];
-
-        source.pitch = pitch;
-        source.PlayOneShot(clip, volume);
-
-        // maybe: play sound only on one brick if two bricks collide
+        StopMusic();
+        PlayOnce(GlobalSound.Found4);
     }
+
+    public void PlayFoundLong()
+    {
+        StopMusic();
+        PlayOnce(GlobalSound.Found8);
+    }
+
+    public void StartMusic()
+    {
+        currentLoop = FindSound(GlobalSound.Forshadowing);
+        PlayOnce(GlobalSound.Forshadowing);
+    }
+
+    public void PlayEnd()
+    {
+        StopMusic();
+        PlayOnce(GlobalSound.End);
+    }
+
+
+
+
+
+
+
+
+    // SETUP //
 
     private void SetGlobalAudioSources()
     {
@@ -90,8 +157,15 @@ public class AudioManager : MonoBehaviour
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
             s.source.volume = s.volume;
-            s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+        }
+
+        foreach (Sound s in Loops)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+            s.source.volume = s.volume;
+            s.source.loop = true;
         }
     }
 

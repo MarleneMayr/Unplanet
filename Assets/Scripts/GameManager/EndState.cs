@@ -17,6 +17,8 @@ public class EndState : State
         cam.transform.SetPositionAndRotation(cameraStart.position, cameraStart.rotation);
         cam.transform.DOMove(cameraEnd.position, flightDuration).SetEase(Ease.InOutSine);
         cam.transform.DORotateQuaternion(cameraEnd.rotation, flightDuration).SetEase(Ease.InOutSine);
+
+        audioManager.PlayEnd();
     }
 
     public override void BeforeDeactivate()

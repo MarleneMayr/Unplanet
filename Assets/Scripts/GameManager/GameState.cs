@@ -33,6 +33,8 @@ public class GameState : State
         visualHints.Activate();
 
         goal.OnReached.AddListener(ReachedGoal);
+
+        audioManager.StartMusic();
     }
 
     public override void BeforeDeactivate()
@@ -95,6 +97,7 @@ public class GameState : State
         {
             menu.SetText(index.ToString());
             StartCoroutine(Light(lightSeconds));
+            audioManager.PlayFoundShort();
         }
     }
 
