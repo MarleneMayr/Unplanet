@@ -51,7 +51,7 @@ _VisRange("Visibility Range", float) = 1
 			color = float4(CustomPassLoadCameraColor(varyings.positionCS.xy, 0), 1);
 
 		// Add your custom pass code here
-		depth *= 30;
+		depth *= 50;
 		float depthfactor = -2 * depth + 1;
 		depthfactor = clamp(depth, 0, 1) * _VisRange;
 		/*if (depth < 0.5) {
@@ -62,8 +62,8 @@ _VisRange("Visibility Range", float) = 1
 		//float f = 1 - abs(_FadeValue * 2 - 1);
 		//return float4((color.rgb + f), color.a);
 
-		float3 col = (color.rgb * (depthfactor)) + (float3(0.2, 0, 0.6) * (1 - depthfactor));
-		return float4(col,1);
+		float3 col = (color.rgb * (depthfactor)) + (float3(0, 0.05, 0.4) * (1 - depthfactor));
+		return float4(col, 1); // *depthfactor * 2;
 	}
 
 		ENDHLSL
