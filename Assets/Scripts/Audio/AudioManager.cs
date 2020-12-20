@@ -88,7 +88,7 @@ public class AudioManager : MonoBehaviour
 
     public void StopMusic()
     {
-        if (currentLoop != null) nextLoop.source.Stop();
+        if (currentLoop != null) currentLoop.source.Stop();
         if (nextLoop != null) nextLoop.source.Stop();
     }
 
@@ -131,8 +131,8 @@ public class AudioManager : MonoBehaviour
 
     public void StartMusic()
     {
-        currentLoop = FindSound(GlobalSound.Forshadowing);
-        PlayOnce(GlobalSound.Forshadowing);
+        currentLoop = FindSound(GlobalSound.Loop1);
+        PlayOnce(GlobalSound.Loop1);
     }
 
     public void PlayEnd()
