@@ -5,8 +5,8 @@ using UnityEngine.Events;
 public class Goal : MonoBehaviour
 {
     public UnityEvent OnReached;
-    private GoalArea triggerArea;
-    private GoalObject goalObject;
+    [SerializeField] private GoalArea triggerArea;
+    [SerializeField] private GoalObject goalObject;
 
     private void Awake()
     {

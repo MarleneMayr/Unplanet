@@ -62,6 +62,8 @@ MonoBehaviour:
   OnReached:
     m_PersistentCalls:
       m_Calls: []
+  triggerArea: {fileID: 2801836581823858599}
+  goalObject: {fileID: 2023613473303918825}
 --- !u!1 &3460142908204817745
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,6 +155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4886803814301933850}
   - component: {fileID: 8573022613524645567}
+  - component: {fileID: 2801836581823858599}
   m_Layer: 0
   m_Name: TriggerArea
   m_TagString: Untagged
@@ -187,6 +190,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 30
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2801836581823858599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4962978147346304790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9e6ed0cef48d36428838ea789dda0c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7372478173182774550
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,6 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1691860357119644514}
   - component: {fileID: 4057709677005722627}
+  - component: {fileID: 2023613473303918825}
   m_Layer: 0
   m_Name: Object
   m_TagString: Untagged
@@ -232,3 +248,15 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2023613473303918825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7372478173182774550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46ef98cf75a78e41ba58ecf43a729b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
