@@ -13,7 +13,7 @@ public class LoopTrack : MonoBehaviour
     void Awake()
     {
         CreateAudioSources();
-        stepSize = 1 / Loops.Length;
+        stepSize = 1.0f / Loops.Length;
     }
 
 
@@ -22,6 +22,8 @@ public class LoopTrack : MonoBehaviour
         int nextLoopId = CalcNextLoopIndex(GameState.progress);
         if (nextLoopId != currentLoopId)
         {
+            print("current time: " + AudioSettings.dspTime);
+            print("progress: " + GameState.progress + ". next loop id: " + nextLoopId + ". step size: " + stepSize);
             PlayLoopScheduled(nextLoopId);
         }
     }
@@ -40,21 +42,31 @@ public class LoopTrack : MonoBehaviour
             }
 
             Sound currentLoop = Array.Find(Loops, loop => loop.source.isPlaying);
-            double timeScheduled = AudioSettings.dspTime;
 
             if (currentLoop != null)
             {
-                timeScheduled = currentLoop.timeScheduled;
+                double timeScheduled = currentLoop.timeScheduled;
 
-                while (AudioSettings.dspTime > timeScheduled)
+                while (timeScheduled < AudioSettings.dspTime)
                 {
-                    timeScheduled += currentLoop.duration; // set scheduled time to end time of current loop
+                    double duration = (double)currentLoop.source.clip.samples / currentLoop.source.clip.frequency;
+                    timeScheduled += currentLoop.duration;
                 }
+
+                currentLoop.source.SetScheduledEndTime(timeScheduled);
+                s.source.PlayScheduled(timeScheduled);
+                s.timeScheduled = timeScheduled;
+                print("Scheduled loop " + index);
+
+            }
+            else
+            {
+                s.source.Play();
+                s.timeScheduled = AudioSettings.dspTime;
+                print("Playing loop " + index);
             }
 
-            currentLoop.source.SetScheduledEndTime(timeScheduled); // end time for current loop
-            s.source.SetScheduledStartTime(timeScheduled);
-            s.timeScheduled = timeScheduled;
+            currentLoopId = index;
         }
     }
 
@@ -84,6 +96,7 @@ public class LoopTrack : MonoBehaviour
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
             s.source.volume = s.volume;
+            s.source.outputAudioMixerGroup = s.output;
             s.source.loop = true;
         }
     }
