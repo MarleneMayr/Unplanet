@@ -215,6 +215,7 @@ Material:
     - _EnableFogOnTransparent: 1
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
+    - _Height: 0.0067011765
     - _HeightAmplitude: 0.02
     - _HeightCenter: 0.5
     - _HeightMapParametrization: 0
@@ -288,7 +289,7 @@ Material:
     - _ZTestModeDistortion: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
-    - _height: 0.75
+    - _height: 0.5
     m_Colors:
     - Color_c6affdb68f3a4d988e9cd2a1f05934db: {r: 1, g: 0.42116076, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}

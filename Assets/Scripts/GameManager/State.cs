@@ -14,6 +14,7 @@ public abstract class State : MonoBehaviour
         audioManager ??= FindObjectOfType<AudioManager>();
         stateMachine = sm;
         menu?.Show(menuFadeDuration);
+        gameObject.SetActive(true);
 
         AfterActivate();
     }
@@ -22,6 +23,7 @@ public abstract class State : MonoBehaviour
     {
         BeforeDeactivate();
 
+        gameObject.SetActive(false);
         menu?.Hide(menuFadeDuration);
     }
 
