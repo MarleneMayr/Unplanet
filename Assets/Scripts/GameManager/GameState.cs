@@ -15,6 +15,7 @@ public class GameState : State
     [SerializeField] private VisualHints visualHints;
     [SerializeField] private float lightSeconds;
     [SerializeField] private float maxDistance;
+    public AnimationCurve progressCurve;
 
     public static int index { get; private set; }
     public static float progress { get; private set; }
@@ -49,7 +50,8 @@ public class GameState : State
     private void Update()
     {
         float distance = Vector3.Distance(currentGoalPos, player.transform.position);
-        progress = Mathf.InverseLerp(0, maxDistance, distance);
+        distance = Mathf.InverseLerp(0, maxDistance, distance);
+        progress = progressCurve.Evaluate(distance);
     }
 
     private void Spawn(Transform spawnPoint)
