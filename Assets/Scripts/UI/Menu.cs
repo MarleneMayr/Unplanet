@@ -34,5 +34,14 @@ namespace UI
 
         public static void StartGame() => OnStartClicked.Invoke();
         public static UnityEvent OnStartClicked = new UnityEvent();
+
+        public static void QuitGame()
+        {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+         Application.Quit();
+#endif
+        }
     }
 }
