@@ -11,17 +11,12 @@ public class GameState : State
     [SerializeField] private Goal goal;
     [SerializeField] private CharacterController player;
     [SerializeField] private Camera UIcam;
-    //[SerializeField] private Transform spawnPoint;
-    //[SerializeField] private Transform[] goalLocations;
-    //[SerializeField] private ScreenEffect[] effects;
     [SerializeField] private VisualHints visualHints;
     [SerializeField] private float lightSeconds;
     [SerializeField] private float maxDistance;
     public AnimationCurve progressCurve;
 
     private Vector3 currentGoalPos;
-    /// <summary>index of the current goal position</summary>
-    //public static int index { get; private set; }
     /// <summary>linear distance in the range [0..1]</summary>
     public static float distance { get; private set; }
 

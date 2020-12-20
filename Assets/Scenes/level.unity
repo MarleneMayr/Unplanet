@@ -812,7 +812,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 1737852859}
   - {fileID: 1737852860}
-  - {fileID: 1737852860}
+  - {fileID: 1737852861}
 --- !u!4 &632282383
 Transform:
   m_ObjectHideFlags: 0
@@ -1257,29 +1257,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 736823894}
-  goalTransforms:
-  - {fileID: 2101716207}
-  - {fileID: 2102872006}
-  - {fileID: 2094227472}
-  - {fileID: 970222143}
-  goalLocations:
-  - pos: {x: -19.51, y: -12.6, z: 78.68}
-    rot: {x: -0, y: -0, z: -0, w: 1}
-    scl: {x: 1, y: 1, z: 1}
-  - pos: {x: 46.31, y: -3.5, z: -121.39}
-    rot: {x: -0, y: -0, z: -0, w: 1}
-    scl: {x: 1, y: 1, z: 1}
-  - pos: {x: -120, y: 15.92, z: -88.78}
-    rot: {x: -0, y: -0, z: -0, w: 1}
-    scl: {x: 1, y: 1, z: 1}
-  - pos: {x: 94.31, y: 14.48, z: 126.43}
-    rot: {x: -0, y: -0, z: -0, w: 1}
-    scl: {x: 1, y: 1, z: 1}
+  goalTransforms: []
+  goalLocations: []
   effects:
   - {fileID: 0}
   - {fileID: 1737852859}
   - {fileID: 1737852860}
-  - {fileID: 1737852860}
+  - {fileID: 1737852861}
 --- !u!114 &1590391249 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 62152724275568712, guid: 40afca90aa246f84e958f4f4a16d1012, type: 3}
@@ -1362,6 +1346,17 @@ MonoBehaviour:
 --- !u!114 &1737852860 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9154926384391505786, guid: 4c23b4c30b26b0a45ad406abe1038dc7, type: 3}
+  m_PrefabInstance: {fileID: 1737852858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93e9e8c5ad66b64f8e6b5133d78c540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1737852861 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2570617252439024279, guid: 4c23b4c30b26b0a45ad406abe1038dc7, type: 3}
   m_PrefabInstance: {fileID: 1737852858}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

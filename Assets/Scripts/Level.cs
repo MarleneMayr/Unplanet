@@ -21,9 +21,9 @@ public class Level : MonoBehaviour
     public GoalLocation GetNextGoal()
     {
         var next = goalLocations[index];
+        effects[index]?.Activate();
         index++;
         if (index >= goalLocations.Length) index = 0;
-        effects[index]?.Activate();
         return next;
     }
 
