@@ -30,6 +30,17 @@ public class GameState : State
         goal.OnReached.RemoveListener(EndGame);
     }
 
+    int steps = 10;
+    private void Update()
+    {
+        steps--;
+        if (steps < 0)
+        {
+            steps = 10;
+            menu.SetText("FPS: " + 1f / Time.unscaledDeltaTime);
+        }
+    }
+
     private void Spawn(Transform spawnPoint)
     {
         player.transform.SetPositionAndRotation(spawnPoint.position, spawnPoint.rotation);
