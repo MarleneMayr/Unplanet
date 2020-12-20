@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 107853687201302842}
   - component: {fileID: 6461569458034871740}
   - component: {fileID: 1570482649753854588}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: weisl_gamejam2020_cliffgenerator10_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 7375885577536485609}
   - component: {fileID: 7912858103451100726}
   - component: {fileID: 6618479030704463486}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gamejam2020_curveCliffs2_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 8314477910155856344}
   - component: {fileID: 8158497707605902905}
   - component: {fileID: 7393421683797758491}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gamejam2020_curveCliffs6_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 2258231180935395813}
   - component: {fileID: 913632066889997707}
   - component: {fileID: 1970120383919986387}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gamejam2020_curveCliffs4_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -556,7 +556,7 @@ GameObject:
   - component: {fileID: 4184549397153945271}
   - component: {fileID: 3446006528380537729}
   - component: {fileID: 2881210506881854934}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: weisl_gamejam2020_cliffgenerator2_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -596,7 +596,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 4179383894628319773}
   - component: {fileID: 2511654767202800663}
   - component: {fileID: 3318340470423944549}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: weisl_gamejam2020_cliffgenerator6_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -731,7 +731,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -787,7 +787,7 @@ GameObject:
   - component: {fileID: 2478925060641221362}
   - component: {fileID: 3162527996118630340}
   - component: {fileID: 9068715470663936799}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gamejam2020_curveCliffs1_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,7 +827,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -932,7 +932,7 @@ GameObject:
   - component: {fileID: 2887882109760078172}
   - component: {fileID: 6345312318689569346}
   - component: {fileID: 7982762511285578449}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gamejam2020_curveCliffs_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -972,7 +972,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1028,7 +1028,7 @@ GameObject:
   - component: {fileID: 2077795724283528390}
   - component: {fileID: 4319458190271929982}
   - component: {fileID: 2245422288496896123}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: weisl_gamejam2020_cliffgenerator4_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1068,7 +1068,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1124,7 +1124,7 @@ GameObject:
   - component: {fileID: 766196087300441944}
   - component: {fileID: 864374032858378699}
   - component: {fileID: 8591204954982539867}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gamejam2020_curveCliffs2_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1164,7 +1164,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1220,7 +1220,7 @@ GameObject:
   - component: {fileID: 8274882647152504845}
   - component: {fileID: 3567674610098318993}
   - component: {fileID: 1283108590377721754}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: weisl_gamejam2020_cliffgenerator_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1260,7 +1260,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1329,7 +1329,7 @@ GameObject:
   - component: {fileID: 2122644094004646838}
   - component: {fileID: 4477695496919786561}
   - component: {fileID: 1632621739239995986}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: weisl_gamejam2020_cliffgenerator5_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1369,7 +1369,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1425,7 +1425,7 @@ GameObject:
   - component: {fileID: 8987890015447146646}
   - component: {fileID: 5368727338345388563}
   - component: {fileID: 7903646528773172439}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gamejam2020_curveCliffs_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1465,7 +1465,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1565,7 +1565,7 @@ GameObject:
   - component: {fileID: 6529220960755843711}
   - component: {fileID: 1269525708466251175}
   - component: {fileID: 8025694023158196568}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: weisl_gamejam2020_cliffgenerator8_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1605,7 +1605,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1661,7 +1661,7 @@ GameObject:
   - component: {fileID: 1198153944406506979}
   - component: {fileID: 7161505989277078843}
   - component: {fileID: 1626223901351665425}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: weisl_gamejam2020_cliffgenerator1_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1701,7 +1701,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1757,7 +1757,7 @@ GameObject:
   - component: {fileID: 4184971569157974382}
   - component: {fileID: 7478084474857944134}
   - component: {fileID: 1063052334264315544}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: weisl_gamejam2020_cliffgenerator3_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1797,7 +1797,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1853,7 +1853,7 @@ GameObject:
   - component: {fileID: 917199698947541662}
   - component: {fileID: 2302539366541019188}
   - component: {fileID: 1767562644432471208}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gamejam2020_curveCliffs3_bakedHDA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1893,7 +1893,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b5d24a4f035671146b0e0065a43c5791, type: 2}
+  - {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5945,6 +5945,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4419944414386152030, guid: b4bfe1fef0bbd4c40a701dd4134d780c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f1c93c2b721dd764a8d086f06f611fa0, type: 2}
     - target: {fileID: 9109361048904926872, guid: b4bfe1fef0bbd4c40a701dd4134d780c, type: 3}
       propertyPath: m_Name
       value: gamejam2020_terrain
