@@ -17,7 +17,6 @@ public class ScreenEffect : MonoBehaviour
 
     public void Update()
     {
-        //print("updating now");
         material.SetFloat("_Fade", 1 - GameState.progress);
     }
 }

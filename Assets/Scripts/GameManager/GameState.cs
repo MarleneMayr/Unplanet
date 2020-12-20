@@ -56,7 +56,6 @@ public class GameState : State
     private void Update()
     {
         distance = CalculateDistance();
-        menu.SetText(distance.ToString());
         if (!kinematic) progress = progressCurve.Evaluate(distance);
     }
 
