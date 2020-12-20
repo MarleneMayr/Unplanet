@@ -168,7 +168,7 @@ MonoBehaviour:
   cameraStart: {fileID: 0}
   cameraEnd: {fileID: 0}
   cam: {fileID: 0}
-  flightDuration: 0
+  flightDuration: 30
 --- !u!1 &5878531583784290149
 GameObject:
   m_ObjectHideFlags: 0
