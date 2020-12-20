@@ -1,3 +1,4 @@
+using System.Collections;
 using UI;
 using UnityEngine;
 
@@ -10,14 +11,20 @@ public class GameState : State
     [SerializeField] private CharacterController player;
     [SerializeField] private Camera UIcam;
     [SerializeField] private Transform spawnPoint;
+    [SerializeField] private Transform[] goalLocations;
+    [SerializeField] private float lightSeconds;
+
+    public static int goalCount => index;
+    private static int index = 0;
 
     public override void AfterActivate()
     {
         Spawn(spawnPoint);
         player.gameObject.SetActive(true);
         UIcam.gameObject.SetActive(false);
+        menu.SetText(index.ToString());
 
-        goal.OnReached.AddListener(EndGame);
+        goal.OnReached.AddListener(ReachedGoal);
     }
 
     public override void BeforeDeactivate()
@@ -27,23 +34,28 @@ public class GameState : State
 
         menu.Hide();
         pauseMenu.Hide();
-        goal.OnReached.RemoveListener(EndGame);
+        goal.OnReached.RemoveListener(ReachedGoal);
     }
 
-    int steps = 10;
-    private void Update()
-    {
-        steps--;
-        if (steps < 0)
-        {
-            steps = 10;
-            menu.SetText("FPS: " + 1f / Time.unscaledDeltaTime);
-        }
-    }
+    //int steps = 10;
+    //private void Update()
+    //{
+    //    steps--;
+    //    if (steps < 0)
+    //    {
+    //        steps = 10;
+    //        menu.SetText("FPS: " + 1f / Time.unscaledDeltaTime);
+    //    }
+    //}
 
     private void Spawn(Transform spawnPoint)
     {
         player.transform.SetPositionAndRotation(spawnPoint.position, spawnPoint.rotation);
+    }
+
+    private void SpawnGoal(int index)
+    {
+        goal.transform.SetPositionAndRotation(goalLocations[index].position, goalLocations[index].rotation);
     }
 
     private void Pause()
@@ -61,8 +73,29 @@ public class GameState : State
         menu.Show();
     }
 
-    private void EndGame()
+    private void ReachedGoal()
     {
-        stateMachine.GoTo<EndState>();
+        index++;
+        if (index == goalLocations.Length)
+        {
+            index = 0;
+            stateMachine.GoTo<EndState>();
+            return;
+        }
+        else
+        {
+            menu.SetText(index.ToString());
+            StartCoroutine(Light(lightSeconds));
+        }
+    }
+
+    private IEnumerator Light(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+
+        goal.StopEffects();
+        SpawnGoal(index);
+
+        // restart env effects
     }
 }
