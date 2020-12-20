@@ -9,6 +9,19 @@ public class Goal : MonoBehaviour
     {
         print("Player reached Goal");
         if (other.GetComponent<CharacterController>())
+        {
+            StartEffects();
             OnReached?.Invoke();
+        }
+    }
+
+    private void StartEffects()
+    {
+
+    }
+
+    public void StopEffects()
+    {
+
     }
 }
