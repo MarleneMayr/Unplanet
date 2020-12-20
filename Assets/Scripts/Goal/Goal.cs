@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-[RequireComponent(typeof(Collider))]
 public class Goal : MonoBehaviour
 {
     public UnityEvent OnReached;
