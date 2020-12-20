@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
 {
     public enum GlobalSound
     {
+        Loop,
         Steps,
         End, 
         Forshadowing,
@@ -20,14 +21,10 @@ public class AudioManager : MonoBehaviour
         Found8,
         Transition1,
         Transition2,
-        Loop1
     }
 
     [SerializeField] private Sound[] GlobalSounds;
-    [SerializeField] private Sound[] Loops;
-
-    private Sound currentLoop;
-    private Sound nextLoop;
+    [SerializeField] private LoopTrack loopTrack;
 
     private List<Sound> PausedSounds = new List<Sound>();
 
@@ -55,41 +52,10 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayLoopScheduled(int index)
-    {
-        Sound s = Loops[index];
-
-        if (s != null && !s.source.isPlaying)
-        {
-            if (nextLoop != null)
-            {
-                nextLoop.source.Stop(); // if next loop already scheduled, stop it
-            }
-
-            double timeScheduled = AudioSettings.dspTime;
-
-            if (currentLoop != null)
-            {
-                 timeScheduled = currentLoop.timeScheduled + currentLoop.duration; // set scheduled time to end time of current loop
-            }
-
-            currentLoop.source.SetScheduledEndTime(timeScheduled); // end time for current loop
-            s.source.SetScheduledStartTime(timeScheduled);
-            s.timeScheduled = timeScheduled;
-            nextLoop = s;
-        }
-    }
-
     public void Stop(GlobalSound name)
     {
         Sound s = FindSound(name);
         s?.source.Stop();
-    }
-
-    public void StopMusic()
-    {
-        if (currentLoop != null) currentLoop.source.Stop();
-        if (nextLoop != null) nextLoop.source.Stop();
     }
 
     public void PauseIfPlaying(GlobalSound name)
@@ -119,33 +85,26 @@ public class AudioManager : MonoBehaviour
 
     public void PlayFoundShort()
     {
-        StopMusic();
+        loopTrack.StopAll();
         PlayOnce(GlobalSound.Found4);
     }
 
     public void PlayFoundLong()
     {
-        StopMusic();
+        loopTrack.StopAll();
         PlayOnce(GlobalSound.Found8);
-    }
-
-    public void StartMusic()
-    {
-        currentLoop = FindSound(GlobalSound.Loop1);
-        PlayOnce(GlobalSound.Loop1);
     }
 
     public void PlayEnd()
     {
-        StopMusic();
+        loopTrack.StopAll();
         PlayOnce(GlobalSound.End);
     }
 
-
-
-
-
-
+    public void StartMusic()
+    {
+        loopTrack.PlayLoopScheduled(0);
+    }
 
 
     // SETUP //
@@ -158,14 +117,6 @@ public class AudioManager : MonoBehaviour
             s.source.clip = s.clip;
             s.source.volume = s.volume;
             s.source.loop = s.loop;
-        }
-
-        foreach (Sound s in Loops)
-        {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-            s.source.volume = s.volume;
-            s.source.loop = true;
         }
     }
 
