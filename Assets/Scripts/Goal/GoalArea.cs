@@ -5,16 +5,15 @@ using UnityEngine.Events;
 
 public class GoalArea : MonoBehaviour
 {
-    public static UnityEvent PlayerInArea = new UnityEvent();
+    [SerializeField] private GoalObject goalObject;
 
     private void OnTriggerEnter(Collider other)
     {
         print("Player is near Goal");
         if (other.GetComponent<CharacterController>())
         {
-            PlayerInArea?.Invoke();
-
             // turn on basic effects here
+            goalObject.gameObject.SetActive(true);
         }
     }
 
@@ -23,6 +22,7 @@ public class GoalArea : MonoBehaviour
         if (other.GetComponent<CharacterController>())
         {
             // turn off basic effects here
+            goalObject.gameObject.SetActive(false);
         }
     }
 }
