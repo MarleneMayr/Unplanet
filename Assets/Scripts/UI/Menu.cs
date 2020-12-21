@@ -1,4 +1,5 @@
 ﻿using DG.Tweening;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -18,6 +19,7 @@ public class Menu : MonoBehaviour
 
     public void Show(float fadeDuration = 0.5f)
     {
+        gameObject.SetActive(true);
         canvas.DOFade(endValue: 1.0f, duration: fadeDuration).SetEase(Ease.OutSine);
         canvas.interactable = true;
         canvas.blocksRaycasts = true;
@@ -25,7 +27,9 @@ public class Menu : MonoBehaviour
 
     public void Hide(float fadeDuration = 0.5f)
     {
-        canvas.DOFade(endValue: 0.0f, duration: fadeDuration).SetEase(Ease.InSine);
+        canvas.DOFade(endValue: 0.0f, duration: fadeDuration)
+            .SetEase(Ease.InSine)
+            .OnComplete(() => gameObject.SetActive(false));
         canvas.interactable = false;
         canvas.blocksRaycasts = false;
     }
