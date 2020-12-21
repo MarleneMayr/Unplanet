@@ -1,5 +1,4 @@
-﻿using UI;
-using UnityEngine;
+﻿using UnityEngine;
 using DG.Tweening;
 
 public class EndState : State
@@ -14,6 +13,8 @@ public class EndState : State
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Menu.OnStartClicked.AddListener(StartGame);
+
+        DOTween.Kill(cam.transform);
         cam.transform.SetPositionAndRotation(cameraStart.position, cameraStart.rotation);
         cam.transform.DOMove(cameraEnd.position, flightDuration).SetEase(Ease.InOutSine);
         cam.transform.DORotateQuaternion(cameraEnd.rotation, flightDuration).SetEase(Ease.InOutSine);
