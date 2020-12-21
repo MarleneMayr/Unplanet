@@ -18,11 +18,14 @@ public class EndState : State
         cam.transform.SetPositionAndRotation(cameraStart.position, cameraStart.rotation);
         cam.transform.DOMove(cameraEnd.position, flightDuration).SetEase(Ease.InOutSine);
         cam.transform.DORotateQuaternion(cameraEnd.rotation, flightDuration).SetEase(Ease.InOutSine);
+
+        audioManager.PlayEnd();
     }
 
     public override void BeforeDeactivate()
     {
         Menu.OnStartClicked.RemoveListener(StartGame);
+        audioManager.FadeOut(AudioManager.GlobalSound.End, 0.1f);
     }
 
     private void StartGame()

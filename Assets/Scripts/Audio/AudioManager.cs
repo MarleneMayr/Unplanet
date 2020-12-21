@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 
 /*
  * AudioManager from Stonehenge AR application
@@ -13,12 +14,21 @@ public class AudioManager : MonoBehaviour
 {
     public enum GlobalSound
     {
-        Success,
-        GameOver
+        Loop,
+        Main,
+        StartMenu,
+        End, 
+        Forshadowing,
+        Found4,
+        Found8,
+        Transition1,
+        Transition2,
     }
 
     [SerializeField] private Sound[] GlobalSounds;
-    [SerializeField] private AudioClip[] ImpactSounds;
+    [SerializeField] private LoopTrack loopTrack;
+    [SerializeField] private bool loopMode = true;
+
 
     private List<Sound> PausedSounds = new List<Sound>();
 
@@ -26,6 +36,9 @@ public class AudioManager : MonoBehaviour
     {
         SetGlobalAudioSources();
     }
+
+
+    // PLAY METHODS //
 
     public void Play(GlobalSound name)
     {
@@ -47,6 +60,14 @@ public class AudioManager : MonoBehaviour
     {
         Sound s = FindSound(name);
         s?.source.Stop();
+    }
+
+    public void StopAll()
+    {
+        foreach(Sound s in GlobalSounds)
+        {
+            s?.source.Stop();
+        }   
     }
 
     public void PauseIfPlaying(GlobalSound name)
@@ -71,17 +92,86 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayImpactSound(AudioSource source, float velocity)
+    public void PlayScheduled(GlobalSound name, float secFromNow)
     {
-        float volume = Mathf.Min(velocity / 3.0f, 1f);
-        float pitch = Random.Range(0.95f, 1.05f);
-        AudioClip clip = ImpactSounds[Random.Range(0, ImpactSounds.Length)];
-
-        source.pitch = pitch;
-        source.PlayOneShot(clip, volume);
-
-        // maybe: play sound only on one brick if two bricks collide
+        Sound s = FindSound(name);
+        s?.source.PlayScheduled(AudioSettings.dspTime + secFromNow);
     }
+
+    public void FadeIn(GlobalSound name, float fadeTimeInSec)
+    {
+        Sound s = FindSound(name);
+        StartCoroutine(AudioFade.FadeIn(s?.source, fadeTimeInSec));
+    }
+
+
+    public void FadeOut(GlobalSound name, float fadeTimeInSec)
+    {
+        Sound s = FindSound(name);
+        StartCoroutine(AudioFade.FadeOut(s?.source, fadeTimeInSec));
+    }
+
+
+    // GAME STATES //
+
+    public void PlayFoundShort()
+    {
+        if (loopMode)
+        {
+            StopAll();
+            loopTrack.StopAll();
+            loopTrack.SetLevelStartTime(6);
+        }
+        else
+        {
+            StopAll();
+            PlayScheduled(GlobalSound.Main, 6);
+        }
+
+        PlayOnce(GlobalSound.Found4);
+    }
+
+    public void PlayFoundLong()
+    {
+        if (loopMode)
+        {
+            StopAll();
+            loopTrack.StopAll();
+            loopTrack.SetLevelStartTime(9);
+        }
+        else
+        {
+            StopAll();
+            PlayScheduled(GlobalSound.Main, 9);
+        }
+
+        PlayOnce(GlobalSound.Found8);
+    }
+
+    public void PlayEnd()
+    {
+        StopAll();
+        loopTrack.StopAll();
+        PlayOnce(GlobalSound.End);
+    }
+
+    public void StartMusic()
+    {
+        PlayOnce(GlobalSound.Forshadowing);
+        if (loopMode)
+        {
+            loopTrack.Activate();
+            loopTrack.SetLevelStartTime(6);
+        }
+        else
+        {
+            PlayScheduled(GlobalSound.Main, 6);
+        }
+
+    }
+
+
+    // SETUP //
 
     private void SetGlobalAudioSources()
     {
@@ -90,7 +180,7 @@ public class AudioManager : MonoBehaviour
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
             s.source.volume = s.volume;
-            s.source.pitch = s.pitch;
+            s.source.outputAudioMixerGroup = s.output;
             s.source.loop = s.loop;
         }
     }

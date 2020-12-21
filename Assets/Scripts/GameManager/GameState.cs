@@ -37,6 +37,8 @@ public class GameState : State
 
         goal.StopEffects();
         goal.OnReached.AddListener(ReachedGoal);
+
+        audioManager.StartMusic();
     }
 
     public override void BeforeDeactivate()
@@ -92,6 +94,7 @@ public class GameState : State
             //menu.SetText(lvl.index.ToString());
             ((GameMenu)menu).UpdateIconCount(lvl.index);
             StartCoroutine(Euphoria(lightSeconds, 2));
+            audioManager.PlayFoundShort();
         }
     }
 
