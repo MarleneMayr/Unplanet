@@ -45,47 +45,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GlobalSounds:
-  - name: 2
-    clip: {fileID: 8300000, guid: 944ded9688074e147941ce40dd0c9ef0, type: 3}
-    output: {fileID: 0}
-    duration: 8
-    volume: 1
-    loop: 0
-    source: {fileID: 0}
-    timeScheduled: 0
-  - name: 1
-    clip: {fileID: 8300000, guid: c966a875dcefc684fa6fa1f01156d835, type: 3}
-    output: {fileID: 0}
-    duration: 40
-    volume: 1
-    loop: 0
-    source: {fileID: 0}
-    timeScheduled: 0
   - name: 3
-    clip: {fileID: 8300000, guid: aa64ce38f95393844b536c129b5de04d, type: 3}
+    clip: {fileID: 8300000, guid: 25cc67da0404a2e468ced6fdd52634bd, type: 3}
     output: {fileID: 0}
-    duration: 8
+    duration: 6
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+    timeScheduled: 0
+  - name: 2
+    clip: {fileID: 8300000, guid: f24cce6cd94f21142879d39f0c35c81c, type: 3}
+    output: {fileID: 0}
+    duration: 30
     volume: 1
     loop: 0
     source: {fileID: 0}
     timeScheduled: 0
   - name: 4
-    clip: {fileID: 8300000, guid: 83f2281bd3905b24eba4a59d80446bab, type: 3}
+    clip: {fileID: 8300000, guid: fb17590f5309e19438e62c710c1e99dd, type: 3}
     output: {fileID: 0}
-    duration: 12
+    duration: 6
     volume: 1
     loop: 0
     source: {fileID: 0}
     timeScheduled: 0
-  - name: 0
-    clip: {fileID: 8300000, guid: 944f9af28749b3f4184a3090e600ca77, type: 3}
+  - name: 5
+    clip: {fileID: 8300000, guid: 85dd20f65973d5046a23ef3ea3d12613, type: 3}
     output: {fileID: 0}
-    duration: 0
+    duration: 9
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+    timeScheduled: 0
+  - name: 1
+    clip: {fileID: 8300000, guid: 445541f71d8dd524d919ed5ab1c24e01, type: 3}
+    output: {fileID: 0}
+    duration: 10
     volume: 1
     loop: 1
     source: {fileID: 0}
     timeScheduled: 0
   loopTrack: {fileID: 7124479497853558955}
+  player: {fileID: 0}
+  loopMode: 0
 --- !u!114 &7124479497853558955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,49 +102,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Loops:
   - name: 0
-    clip: {fileID: 8300000, guid: c209f7036bfd7aa41ab854d31847a7e0, type: 3}
-    output: {fileID: -6322610622278140579, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
-    duration: 16
+    clip: {fileID: 8300000, guid: 15f5fed0060ea224481c576af8a7949d, type: 3}
+    output: {fileID: 24300002, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
+    duration: 12
     volume: 1
     loop: 1
     source: {fileID: 0}
     timeScheduled: 0
   - name: 0
-    clip: {fileID: 8300000, guid: b30078a776c513e45a041c5a677c0f14, type: 3}
-    output: {fileID: 1307228533139186004, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
-    duration: 16
+    clip: {fileID: 8300000, guid: 2c284583cf3ca744a9f3122436d1ca04, type: 3}
+    output: {fileID: 24300002, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
+    duration: 12
     volume: 1
     loop: 1
     source: {fileID: 0}
     timeScheduled: 0
   - name: 0
-    clip: {fileID: 8300000, guid: e940f82e3201a304f8e9cd2a3c87c2b9, type: 3}
-    output: {fileID: -2011510424794569402, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
-    duration: 16
+    clip: {fileID: 8300000, guid: 40aa703022b576e41929fdc10b4f4b3e, type: 3}
+    output: {fileID: 24300002, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
+    duration: 12
     volume: 1
     loop: 1
     source: {fileID: 0}
     timeScheduled: 0
   - name: 0
-    clip: {fileID: 8300000, guid: 705bec76d61bb4a49baea49d5f2a3e82, type: 3}
-    output: {fileID: 5105903312081112568, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
-    duration: 16
+    clip: {fileID: 8300000, guid: fcea9f0bb489dfb4886d27a023b10a4f, type: 3}
+    output: {fileID: 24300002, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
+    duration: 12
     volume: 1
     loop: 1
     source: {fileID: 0}
     timeScheduled: 0
   - name: 0
-    clip: {fileID: 8300000, guid: f189129cc48aaf44fb276a049a46f633, type: 3}
-    output: {fileID: -7912940006346051783, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
-    duration: 16
+    clip: {fileID: 8300000, guid: 9c370680c62e0b84e8b173adb7edec6e, type: 3}
+    output: {fileID: 24300002, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
+    duration: 40
     volume: 1
     loop: 1
     source: {fileID: 0}
     timeScheduled: 0
   - name: 0
-    clip: {fileID: 8300000, guid: 29f3f0231b532374e9ddc19b52c2a0ab, type: 3}
-    output: {fileID: -4011460961627486547, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
-    duration: 16
+    clip: {fileID: 8300000, guid: da0664ecb7f7fed4982ed7866e91be1e, type: 3}
+    output: {fileID: 24300002, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
+    duration: 12
     volume: 1
     loop: 1
     source: {fileID: 0}

@@ -14,7 +14,7 @@ public class AudioManager : MonoBehaviour
     public enum GlobalSound
     {
         Loop,
-        Steps,
+        Main,
         End, 
         Forshadowing,
         Found4,
@@ -25,12 +25,20 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private Sound[] GlobalSounds;
     [SerializeField] private LoopTrack loopTrack;
+    [SerializeField] private PlayerMovement player;
+    [SerializeField] private bool loopMode = true;
+
 
     private List<Sound> PausedSounds = new List<Sound>();
 
     void Awake()
     {
         SetGlobalAudioSources();
+    }
+
+    private void Update()
+    {
+
     }
 
 
@@ -80,30 +88,67 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void PlayScheduled(GlobalSound name, float secFromNow)
+    {
+        Sound s = FindSound(name);
+        s?.source.PlayScheduled(AudioSettings.dspTime + secFromNow);
+    }
+
 
     // GAME STATES //
 
     public void PlayFoundShort()
     {
-        loopTrack.StopAll();
+        if (loopMode)
+        {
+            loopTrack.StopAll();
+            loopTrack.SetLevelStartTime(6);
+        }
+        else
+        {
+            Stop(GlobalSound.Main);
+            PlayScheduled(GlobalSound.Main, 6);
+        }
+
         PlayOnce(GlobalSound.Found4);
     }
 
     public void PlayFoundLong()
     {
-        loopTrack.StopAll();
+        if (loopMode)
+        {
+            loopTrack.StopAll();
+            loopTrack.SetLevelStartTime(9);
+        }
+        else
+        {
+            Stop(GlobalSound.Main);
+            PlayScheduled(GlobalSound.Main, 9);
+        }
+
         PlayOnce(GlobalSound.Found8);
     }
 
     public void PlayEnd()
     {
         loopTrack.StopAll();
+        Stop(GlobalSound.Main);
         PlayOnce(GlobalSound.End);
     }
 
     public void StartMusic()
     {
-        loopTrack.PlayLoopScheduled(5);
+        PlayOnce(GlobalSound.Forshadowing);
+        if (loopMode)
+        {
+            loopTrack.Activate();
+            loopTrack.SetLevelStartTime(6);
+        }
+        else
+        {
+            PlayScheduled(GlobalSound.Main, 6);
+        }
+
     }
 
 

@@ -9,6 +9,8 @@ public class LoopTrack : MonoBehaviour
 
     private int currentLoopId;
     private float stepSize;
+    private double levelStartTime = 0;
+    public bool active = false;
 
     void Awake()
     {
@@ -19,11 +21,9 @@ public class LoopTrack : MonoBehaviour
 
     void Update()
     {
-        int nextLoopId = CalcNextLoopIndex(GameState.progress);
-        if (nextLoopId != currentLoopId)
+        int nextLoopId = CalcNextLoopIndex(GameState.distance);
+        if (active && nextLoopId != currentLoopId)
         {
-            print("current time: " + AudioSettings.dspTime);
-            print("progress: " + GameState.progress + ". next loop id: " + nextLoopId + ". step size: " + stepSize);
             PlayLoopScheduled(nextLoopId);
         }
     }
@@ -45,25 +45,31 @@ public class LoopTrack : MonoBehaviour
 
             if (currentLoop != null)
             {
-                double timeScheduled = currentLoop.timeScheduled;
+                double timeScheduled = levelStartTime > AudioSettings.dspTime ? levelStartTime : currentLoop.timeScheduled;
 
                 while (timeScheduled < AudioSettings.dspTime)
                 {
                     // double duration = (double)currentLoop.source.clip.samples / currentLoop.source.clip.frequency;
-                    timeScheduled += currentLoop.duration;
+                    timeScheduled += (currentLoop.duration / 2);
                 }
 
                 currentLoop.source.SetScheduledEndTime(timeScheduled);
                 s.source.PlayScheduled(timeScheduled);
                 s.timeScheduled = timeScheduled;
-                print("Scheduled loop " + index);
-
             }
             else
             {
-                s.source.Play();
-                s.timeScheduled = AudioSettings.dspTime;
-                print("Playing loop " + index);
+                if (levelStartTime > AudioSettings.dspTime)
+                {
+                    s.source.PlayScheduled(levelStartTime);
+                    s.timeScheduled = levelStartTime;
+                }
+                else
+                {
+                    s.source.Play();
+                    s.timeScheduled = AudioSettings.dspTime;
+                }
+                
             }
 
             currentLoopId = index;
@@ -80,6 +86,22 @@ public class LoopTrack : MonoBehaviour
         {
             loop.source.Stop();
         }
+    }
+
+    public void SetLevelStartTime(float secFromNow)
+    {
+        levelStartTime = AudioSettings.dspTime + secFromNow;
+    }
+
+    public void Activate()
+    {
+        active = true;
+    }
+
+    public void Deactivate()
+    {
+        StopAll();
+        active = false;
     }
 
 
