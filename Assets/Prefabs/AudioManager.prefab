@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Loops:
   - name: 0
-    clip: {fileID: 8300000, guid: 705bec76d61bb4a49baea49d5f2a3e82, type: 3}
+    clip: {fileID: 8300000, guid: c209f7036bfd7aa41ab854d31847a7e0, type: 3}
     output: {fileID: -6322610622278140579, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
     duration: 16
     volume: 1
@@ -108,7 +108,7 @@ MonoBehaviour:
     source: {fileID: 0}
     timeScheduled: 0
   - name: 0
-    clip: {fileID: 8300000, guid: e940f82e3201a304f8e9cd2a3c87c2b9, type: 3}
+    clip: {fileID: 8300000, guid: b30078a776c513e45a041c5a677c0f14, type: 3}
     output: {fileID: 1307228533139186004, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
     duration: 16
     volume: 1
@@ -116,7 +116,7 @@ MonoBehaviour:
     source: {fileID: 0}
     timeScheduled: 0
   - name: 0
-    clip: {fileID: 8300000, guid: b30078a776c513e45a041c5a677c0f14, type: 3}
+    clip: {fileID: 8300000, guid: e940f82e3201a304f8e9cd2a3c87c2b9, type: 3}
     output: {fileID: -2011510424794569402, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
     duration: 16
     volume: 1
@@ -124,7 +124,7 @@ MonoBehaviour:
     source: {fileID: 0}
     timeScheduled: 0
   - name: 0
-    clip: {fileID: 8300000, guid: c209f7036bfd7aa41ab854d31847a7e0, type: 3}
+    clip: {fileID: 8300000, guid: 705bec76d61bb4a49baea49d5f2a3e82, type: 3}
     output: {fileID: 5105903312081112568, guid: 84f7dfd5b3973d444b0d79e745b3e38a, type: 2}
     duration: 16
     volume: 1

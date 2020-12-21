@@ -103,7 +103,7 @@ public class AudioManager : MonoBehaviour
 
     public void StartMusic()
     {
-        loopTrack.PlayLoopScheduled(0);
+        loopTrack.PlayLoopScheduled(5);
     }
 
 
