@@ -6,6 +6,7 @@ using UnityEngine;
 public class LoopTrack : MonoBehaviour
 {
     [SerializeField] private Sound[] Loops;
+    [SerializeField] private AudioManager audioManager;
 
     private int currentLoopId;
     private float stepSize;
@@ -52,12 +53,20 @@ public class LoopTrack : MonoBehaviour
                 {
                     // double duration = (double)currentLoop.source.clip.samples / currentLoop.source.clip.frequency;
                     timeScheduled += (currentLoop.duration / 2);
+                    //timeScheduled += currentLoop.duration;
+                }
+
+                currentLoop.source.SetScheduledEndTime(timeScheduled);
+                AudioFade.ScheduledFadeOut(currentLoop.source, 0.1f, (float)timeScheduled);
+
+                if (index == 0)
+                {
+                    audioManager.PlayScheduled(AudioManager.GlobalSound.Transition1, (float)(timeScheduled - AudioSettings.dspTime));
+                    timeScheduled += audioManager.FindSound(AudioManager.GlobalSound.Transition1).duration;
                 }
 
                 s.source.PlayScheduled(timeScheduled);
                 s.timeScheduled = timeScheduled;
-                currentLoop.source.SetScheduledEndTime(timeScheduled);
-                AudioFade.ScheduledFadeOut(currentLoop.source, 0.1f, (float)timeScheduled);
             }
             else
             {

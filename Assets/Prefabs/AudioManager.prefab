@@ -93,6 +93,14 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
     timeScheduled: 0
+  - name: 7
+    clip: {fileID: 8300000, guid: df415b1140623af4ea617ed268dff257, type: 3}
+    output: {fileID: -516309338697480558, guid: 0748617d7ac37d941b1ddb33bc95d7a4, type: 2}
+    duration: 3
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+    timeScheduled: 0
   loopTrack: {fileID: 7124479497853558955}
   loopMode: 0
 --- !u!114 &7124479497853558955
@@ -148,4 +156,5 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
     timeScheduled: 0
+  audioManager: {fileID: -2179793522323464189}
   active: 0
