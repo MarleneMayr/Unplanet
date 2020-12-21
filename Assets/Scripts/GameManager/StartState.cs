@@ -1,6 +1,4 @@
-﻿using UI;
-
-public class StartState : State
+﻿public class StartState : State
 {
     public override void AfterActivate()
     {

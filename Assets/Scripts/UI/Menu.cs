@@ -3,45 +3,43 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace UI
+[RequireComponent(typeof(CanvasGroup))]
+public class Menu : MonoBehaviour
 {
-    [RequireComponent(typeof(CanvasGroup))]
-    public class Menu : MonoBehaviour
+    private CanvasGroup canvas;
+    [SerializeField] private TextMeshProUGUI infoTxt;
+
+    public void SetText(string message) => infoTxt.SetText(message);
+
+    private void Awake()
     {
-        private CanvasGroup canvas;
-        [SerializeField] private TextMeshProUGUI infoTxt;
+        canvas = GetComponent<CanvasGroup>();
+    }
 
-        public void SetText(string message) => infoTxt.SetText(message);
+    public void Show(float fadeDuration = 0.5f)
+    {
+        canvas.DOFade(endValue: 1.0f, duration: fadeDuration).SetEase(Ease.OutSine);
+        canvas.interactable = true;
+        canvas.blocksRaycasts = true;
+    }
 
-        private void Awake()
-        {
-            canvas = GetComponent<CanvasGroup>();
-        }
+    public void Hide(float fadeDuration = 0.5f)
+    {
+        canvas.DOFade(endValue: 0.0f, duration: fadeDuration).SetEase(Ease.InSine);
+        canvas.interactable = false;
+        canvas.blocksRaycasts = false;
+    }
 
-        public void Show(float fadeDuration = 0.5f)
-        {
-            canvas.DOFade(endValue: 1.0f, duration: fadeDuration).SetEase(Ease.OutSine);
-            canvas.interactable = true;
-            canvas.blocksRaycasts = true;
-        }
+    public static void StartGame() => OnStartClicked.Invoke();
+    public static UnityEvent OnStartClicked = new UnityEvent();
 
-        public void Hide(float fadeDuration = 0.5f)
-        {
-            canvas.DOFade(endValue: 0.0f, duration: fadeDuration).SetEase(Ease.InSine);
-            canvas.interactable = false;
-            canvas.blocksRaycasts = false;
-        }
-
-        public static void StartGame() => OnStartClicked.Invoke();
-        public static UnityEvent OnStartClicked = new UnityEvent();
-
-        public static void QuitGame()
-        {
+    public static void QuitGame()
+    {
 #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
+        UnityEditor.EditorApplication.isPlaying = false;
 #else
          Application.Quit();
 #endif
-        }
     }
 }
+
