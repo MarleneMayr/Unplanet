@@ -221,6 +221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScreenCapture
       objectReference: {fileID: 0}
+    - target: {fileID: 6059954599215182351, guid: dc5451d40b8abd942b82f23dd8f6c91c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6059954599215182353, guid: dc5451d40b8abd942b82f23dd8f6c91c, type: 3}
       propertyPath: m_RootOrder
       value: 16
