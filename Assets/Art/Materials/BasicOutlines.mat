@@ -160,6 +160,7 @@ Material:
     - Vector1_43124a9c9f90469597e0191e3f2bd76f: 0
     - Vector1_535587c7b5a843c2a1f855ef6a1c3422: 5
     - Vector1_79c74eaa52f54934ba0b2d7e6c316d02: -0.1
+    - Vector1_8411a7867ef4413e80f9c3992a5130f9: 0.5
     - Vector1_84d98dc5e2ad4f0e9470ee8a30c63409: 1
     - Vector1_a4f76da7152049a1b81e42d6efd78659: 1
     - Vector1_a75fcc9224fa4684a49202c7b9b616b0: 5
@@ -220,7 +221,7 @@ Material:
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
     - _Fade: 1
-    - _Height: 0.0057253344
+    - _Height: 0.8326335
     - _HeightAmplitude: 0.02
     - _HeightCenter: 0.5
     - _HeightMapParametrization: 0

@@ -48,6 +48,7 @@ Material:
     m_Floats:
     - Vector1_6de7fe5ef4bf4f2cadd6108c3b69064e: 0.04
     - Vector1_bebbd0a9e9584a09a4309d34f9c2ac09: 5
+    - Vector1_e5c688afa98e4c8ba21b6a29e6f5fb58: 7
     - Vector1_fbe3091627504df79056f007236d9a72: 0.15
     - _AddPrecomputedVelocity: 0
     - _AlphaCutoffEnable: 0
@@ -64,7 +65,7 @@ Material:
     - _DstBlend: 10
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
-    - _Fade: 0.29267436
+    - _Fade: 1
     - _OpaqueCullMode: 2
     - _RenderQueueType: 4
     - _SrcBlend: 1
