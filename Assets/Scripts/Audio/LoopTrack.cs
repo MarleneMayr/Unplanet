@@ -49,7 +49,7 @@ public class LoopTrack : MonoBehaviour
 
                 while (timeScheduled < AudioSettings.dspTime)
                 {
-                    double duration = (double)currentLoop.source.clip.samples / currentLoop.source.clip.frequency;
+                    // double duration = (double)currentLoop.source.clip.samples / currentLoop.source.clip.frequency;
                     timeScheduled += currentLoop.duration;
                 }
 
