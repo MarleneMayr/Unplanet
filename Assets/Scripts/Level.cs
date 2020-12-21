@@ -11,7 +11,7 @@ public class Level : MonoBehaviour
     public ScreenEffect[] effects;
 
     public int index { get; private set; }
-    public bool isLastGoal() => index == goalLocations.Length;
+    public bool isLastGoal() => index >= goalLocations.Length;
 
     public void Init()
     {
@@ -23,7 +23,6 @@ public class Level : MonoBehaviour
         var next = goalLocations[index];
         effects[index]?.Activate();
         index++;
-        if (index >= goalLocations.Length) index = 0;
         return next;
     }
 

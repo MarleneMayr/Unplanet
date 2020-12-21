@@ -1,6 +1,5 @@
 using DG.Tweening;
 using System.Collections;
-using UI;
 using UnityEngine;
 
 public class GameState : State
@@ -30,12 +29,10 @@ public class GameState : State
 
     public override void AfterActivate()
     {
-        lvl = levelManager.GetNext();
-        Spawn(lvl.spawnPoint); // spawn player
-        currentGoalPos = goal.Spawn(lvl.GetNextGoal()); // spawn goal at new position
+        LoadLevel();
+
         player.gameObject.SetActive(true);
         UIcam.gameObject.SetActive(false);
-        menu.SetText(lvl.index.ToString());
         visualHints.Activate();
 
         goal.OnReached.AddListener(ReachedGoal);
@@ -61,6 +58,15 @@ public class GameState : State
         if (!kinematic) progress = progressCurve.Evaluate(distance);
     }
 
+    private void LoadLevel()
+    {
+        lvl = levelManager.GetNext();
+        Spawn(lvl.spawnPoint); // spawn player
+        currentGoalPos = goal.Spawn(lvl.GetNextGoal()); // spawn goal at new position
+
+        ((GameMenu)menu).SetIconAmount(lvl.goalLocations.Length);
+    }
+
     private float CalculateDistance()
     {
         float d = Vector3.Distance(currentGoalPos, player.transform.position);
@@ -84,7 +90,8 @@ public class GameState : State
         }
         else
         {
-            menu.SetText(lvl.index.ToString());
+            //menu.SetText(lvl.index.ToString());
+            ((GameMenu)menu).UpdateIconCount(lvl.index);
             StartCoroutine(Euphoria(lightSeconds, 2));
             audioManager.PlayFoundShort();
         }
