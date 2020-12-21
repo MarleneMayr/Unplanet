@@ -8,14 +8,15 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WobbleMat
-  m_Shader: {fileID: 4800000, guid: 0488f1fb0ee90aa4bb62793d5ac628c3, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: dcadfe8ec9e21504ea5a645927cf873c, type: 3}
   m_ShaderKeywords: _ENABLE_FOG_ON_TRANSPARENT _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap:
     MotionVector: User
+    RenderType: Transparent
   disabledShaderPasses:
   - MOTIONVECTORS
   - TransparentDepthPrepass
@@ -45,9 +46,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_6de7fe5ef4bf4f2cadd6108c3b69064e: 0.02
+    - Vector1_6de7fe5ef4bf4f2cadd6108c3b69064e: 0.04
     - Vector1_bebbd0a9e9584a09a4309d34f9c2ac09: 5
-    - Vector1_fbe3091627504df79056f007236d9a72: 0.1
+    - Vector1_fbe3091627504df79056f007236d9a72: 0.15
     - _AddPrecomputedVelocity: 0
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 10
@@ -63,6 +64,7 @@ Material:
     - _DstBlend: 10
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
+    - _Fade: 0
     - _OpaqueCullMode: 2
     - _RenderQueueType: 4
     - _SrcBlend: 1

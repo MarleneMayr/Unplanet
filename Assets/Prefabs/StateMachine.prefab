@@ -50,29 +50,39 @@ MonoBehaviour:
   UIcam: {fileID: 0}
   spawnPoint: {fileID: 0}
   goalLocations: []
+  effects: []
   visualHints: {fileID: 0}
   lightSeconds: 4
-  maxDistance: 400
+  maxDistance: 200
   progressCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: 0.098210104
+      outSlope: 0.098210104
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.23784193
+    - serializedVersion: 3
+      time: 0.24702221
+      value: 0.52311635
+      inSlope: 1.6415995
+      outSlope: 1.6415995
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.05683375
+      outWeight: 0.21674407
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 2
-      outSlope: 2
+      inSlope: 0.10156145
+      outSlope: 0.10156145
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.37284327
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -168,7 +178,7 @@ MonoBehaviour:
   cameraStart: {fileID: 0}
   cameraEnd: {fileID: 0}
   cam: {fileID: 0}
-  flightDuration: 0
+  flightDuration: 30
 --- !u!1 &5878531583784290149
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class VisualHints : MonoBehaviour
 {
-    public Material HueMaterial;
+    public Material HueMaterial; // blue-orange
+    public Material HueMaterial_Hint;
 
     public void Activate()
     {
@@ -17,5 +18,6 @@ public class VisualHints : MonoBehaviour
     private void Update()
     {
         HueMaterial.SetFloat("_Height", GameState.progress);
+        HueMaterial_Hint.SetFloat("_Height", GameState.progress);
     }
 }
