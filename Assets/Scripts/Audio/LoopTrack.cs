@@ -80,9 +80,12 @@ public class LoopTrack : MonoBehaviour
 
     public void StopAll()
     {
-        Sound currentLoop = Array.Find(Loops, loop => loop.source.isPlaying);
-        //AudioFade.FadeOut(currentLoop?.source, 0.05f);
-        currentLoop?.source.Stop();
+        Sound[] currentLoops = Array.FindAll(Loops, loop => loop.source.isPlaying);
+        foreach (Sound loop in currentLoops)
+        {
+            loop.source.Stop();
+            // AudioFade.FadeOut(loop?.source, 0.05f);
+        }
 
         Sound[] scheduledLoops = Array.FindAll(Loops, loop => loop.timeScheduled > AudioSettings.dspTime);
         foreach (Sound loop in scheduledLoops)

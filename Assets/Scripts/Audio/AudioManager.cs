@@ -62,6 +62,14 @@ public class AudioManager : MonoBehaviour
         s?.source.Stop();
     }
 
+    public void StopAll()
+    {
+        foreach(Sound s in GlobalSounds)
+        {
+            s?.source.Stop();
+        }   
+    }
+
     public void PauseIfPlaying(GlobalSound name)
     {
         Sound s = FindSound(name);
@@ -110,12 +118,13 @@ public class AudioManager : MonoBehaviour
     {
         if (loopMode)
         {
+            StopAll();
             loopTrack.StopAll();
             loopTrack.SetLevelStartTime(6);
         }
         else
         {
-            Stop(GlobalSound.Main);
+            StopAll();
             PlayScheduled(GlobalSound.Main, 6);
         }
 
@@ -126,12 +135,13 @@ public class AudioManager : MonoBehaviour
     {
         if (loopMode)
         {
+            StopAll();
             loopTrack.StopAll();
             loopTrack.SetLevelStartTime(9);
         }
         else
         {
-            Stop(GlobalSound.Main);
+            StopAll();
             PlayScheduled(GlobalSound.Main, 9);
         }
 
@@ -140,8 +150,8 @@ public class AudioManager : MonoBehaviour
 
     public void PlayEnd()
     {
+        StopAll();
         loopTrack.StopAll();
-        Stop(GlobalSound.Main);
         PlayOnce(GlobalSound.End);
     }
 
