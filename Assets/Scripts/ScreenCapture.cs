@@ -26,6 +26,6 @@ void Start()
         //    UnityEngine.ScreenCapture.CaptureScreenshot("screenCapture", 2);
         //}
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
-            UnityEngine.ScreenCapture.CaptureScreenshot("screenCapture.png", 2);
+            UnityEngine.ScreenCapture.CaptureScreenshot("screenCapture.png", 4);
     }
 }
