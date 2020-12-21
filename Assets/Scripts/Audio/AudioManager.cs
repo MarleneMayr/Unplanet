@@ -185,7 +185,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private Sound FindSound(GlobalSound name)
+    public Sound FindSound(GlobalSound name)
     {
         Sound s = System.Array.Find(GlobalSounds, sound => sound.name == name);
         if (s == null)
