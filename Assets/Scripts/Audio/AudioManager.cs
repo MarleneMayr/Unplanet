@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 
 /*
  * AudioManager from Stonehenge AR application
@@ -15,6 +16,7 @@ public class AudioManager : MonoBehaviour
     {
         Loop,
         Main,
+        StartMenu,
         End, 
         Forshadowing,
         Found4,
@@ -25,7 +27,6 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private Sound[] GlobalSounds;
     [SerializeField] private LoopTrack loopTrack;
-    [SerializeField] private PlayerMovement player;
     [SerializeField] private bool loopMode = true;
 
 
@@ -34,11 +35,6 @@ public class AudioManager : MonoBehaviour
     void Awake()
     {
         SetGlobalAudioSources();
-    }
-
-    private void Update()
-    {
-
     }
 
 
@@ -92,6 +88,19 @@ public class AudioManager : MonoBehaviour
     {
         Sound s = FindSound(name);
         s?.source.PlayScheduled(AudioSettings.dspTime + secFromNow);
+    }
+
+    public void FadeIn(GlobalSound name, float fadeTimeInSec)
+    {
+        Sound s = FindSound(name);
+        StartCoroutine(AudioFade.FadeIn(s?.source, fadeTimeInSec));
+    }
+
+
+    public void FadeOut(GlobalSound name, float fadeTimeInSec)
+    {
+        Sound s = FindSound(name);
+        StartCoroutine(AudioFade.FadeOut(s?.source, fadeTimeInSec));
     }
 
 
@@ -161,6 +170,7 @@ public class AudioManager : MonoBehaviour
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
             s.source.volume = s.volume;
+            s.source.outputAudioMixerGroup = s.output;
             s.source.loop = s.loop;
         }
     }

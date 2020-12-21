@@ -30,6 +30,7 @@ public class LoopTrack : MonoBehaviour
 
     public void PlayLoopScheduled(int index)
     {
+        print("called play scheduled on loop " + index);
         Sound s = Loops[index];
 
         if (s != null && !s.source.isPlaying)
@@ -53,9 +54,10 @@ public class LoopTrack : MonoBehaviour
                     timeScheduled += (currentLoop.duration / 2);
                 }
 
-                currentLoop.source.SetScheduledEndTime(timeScheduled);
                 s.source.PlayScheduled(timeScheduled);
                 s.timeScheduled = timeScheduled;
+                currentLoop.source.SetScheduledEndTime(timeScheduled);
+                AudioFade.ScheduledFadeOut(currentLoop.source, 0.1f, (float)timeScheduled);
             }
             else
             {
@@ -79,7 +81,8 @@ public class LoopTrack : MonoBehaviour
     public void StopAll()
     {
         Sound currentLoop = Array.Find(Loops, loop => loop.source.isPlaying);
-        currentLoop.source.Stop();
+        //AudioFade.FadeOut(currentLoop?.source, 0.05f);
+        currentLoop?.source.Stop();
 
         Sound[] scheduledLoops = Array.FindAll(Loops, loop => loop.timeScheduled > AudioSettings.dspTime);
         foreach (Sound loop in scheduledLoops)

@@ -25,6 +25,7 @@ public class EndState : State
     public override void BeforeDeactivate()
     {
         Menu.OnStartClicked.RemoveListener(StartGame);
+        audioManager.FadeOut(AudioManager.GlobalSound.End, 0.1f);
     }
 
     private void StartGame()
