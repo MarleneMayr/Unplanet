@@ -9250,17 +9250,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 851783808564326044, guid: cefe4eee7708d2d488c9e69f3d7b411c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 851783808569173233, guid: cefe4eee7708d2d488c9e69f3d7b411c, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 851783808569173233, guid: cefe4eee7708d2d488c9e69f3d7b411c, type: 3}
       propertyPath: m_Materials.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 851783808569173233, guid: cefe4eee7708d2d488c9e69f3d7b411c, type: 3}
       propertyPath: m_Materials.Array.data[0]
