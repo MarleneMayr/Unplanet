@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,7 +7,7 @@ public class GoalObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("Player is in Goal");
+        print("Player reached Goal");
         if (other.GetComponent<CharacterController>())
         {
             PlayerInGoal?.Invoke();

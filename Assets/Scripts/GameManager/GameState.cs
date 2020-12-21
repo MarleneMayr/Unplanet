@@ -38,6 +38,7 @@ public class GameState : State
         menu.SetText(lvl.index.ToString());
         visualHints.Activate();
 
+        goal.StopEffects();
         goal.OnReached.AddListener(ReachedGoal);
     }
 
@@ -89,7 +90,9 @@ public class GameState : State
 
     private IEnumerator Euphoria(float seconds, float fadeIn)
     {
-        yield return new WaitForSeconds(seconds);
+        yield return new WaitForSeconds(seconds - 1);
+        goal.StopEffects();
+        yield return new WaitForSeconds(1);
 
         // spawn goal at new position
         currentGoalPos = goal.Spawn(lvl.GetNextGoal());

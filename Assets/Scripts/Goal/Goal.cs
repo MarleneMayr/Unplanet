@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.VFX;
 
 public class Goal : MonoBehaviour
 {
     public UnityEvent OnReached;
     [SerializeField] private GoalArea triggerArea;
     [SerializeField] private GoalObject goalObject;
+    [SerializeField] private VisualEffect vfx;
 
     private void Awake()
     {
@@ -14,8 +16,8 @@ public class Goal : MonoBehaviour
 
     public Vector3 Spawn(Level.GoalLocation t)
     {
-        StopEffects();
         transform.SetPositionAndRotation(t.pos, t.rot);
+
         triggerArea.GetComponent<Collider>().enabled = true;
         goalObject.GetComponent<Collider>().enabled = true;
 
@@ -24,8 +26,8 @@ public class Goal : MonoBehaviour
 
     public void StopEffects()
     {
-        // turn off goalobject effects
-        // turn off goalarea effects
+        vfx.Stop();
+
     }
 
     public void Reached()
@@ -34,6 +36,6 @@ public class Goal : MonoBehaviour
         goalObject.GetComponent<Collider>().enabled = false;
         OnReached?.Invoke();
 
-        // start found effects here
+        vfx.Play();
     }
 }
